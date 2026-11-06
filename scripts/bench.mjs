@@ -44,11 +44,10 @@ const median = (a) => {
 
 // FAST_FAIL_HOSTS=a.local,b.local makes those hosts fail DNS instantly (isolates slow-resolving hosts).
 const fastFail = (process.env.FAST_FAIL_HOSTS || "").split(",").filter(Boolean);
-const args = fastFail.length
-  ? [
-      `--host-resolver-rules=${fastFail.map((h) => `MAP ${h} ~NOTFOUND`).join(", ")}`,
-    ]
-  : [];
+// RESOLVE=host=ip[,host=ip]: pin DNS (e.g. while a local resolver still caches an old answer).
+const pinned = (process.env.RESOLVE || "").split(",").filter(Boolean).map((p) => p.split("="));
+const rules = [...fastFail.map((h) => `MAP ${h} ~NOTFOUND`), ...pinned.map(([h, ip]) => `MAP ${h} ${ip}`)];
+const args = rules.length ? [`--host-resolver-rules=${rules.join(", ")}`] : [];
 const browser = await chromium.launch({
   executablePath: CHROME,
   headless: true,

@@ -1,0 +1,587 @@
+{
+  "measuredAt": "2026-11-06T14:22:48.344Z",
+  "results": [
+    {
+      "url": "https://caspian.muradgojayev.com/",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 171,
+        "fcpMs": 1126,
+        "lcpMs": 1126,
+        "loadMs": 3328,
+        "cls": 0.012,
+        "transferKB": 584,
+        "requests": 30,
+        "pageTransferKB": 556,
+        "pageRequests": 28,
+        "renderBlocking": 1,
+        "domNodes": 490
+      },
+      "detail": [
+        {
+          "interstitialMs": 4,
+          "ttfbMs": 171,
+          "fcpMs": 1172,
+          "lcpMs": 1172,
+          "loadMs": 3342,
+          "cls": 0.012,
+          "transferKB": 590,
+          "requests": 30,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 490,
+          "pageTransferKB": 556,
+          "shifts": [
+            {
+              "v": 0.012,
+              "t": 2391,
+              "src": [
+                "DIV.grid grid-cols-2 gap-3 sm:gap-4 y765→736",
+                "DL.mt-10 grid max-w-md grid-cols-3 gap-4 y645→616",
+                "DIV.rounded-3xl bg-white p-4 ring-1 ring-lin y789→760",
+                "DIV.mt-8 flex flex-wrap gap-3 y562→533",
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 28,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 173,
+          "fcpMs": 1122,
+          "lcpMs": 1122,
+          "loadMs": 3328,
+          "cls": 0.012,
+          "transferKB": 584,
+          "requests": 30,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 490,
+          "pageTransferKB": 556,
+          "shifts": [
+            {
+              "v": 0.012,
+              "t": 2394,
+              "src": [
+                "DIV.grid grid-cols-2 gap-3 sm:gap-4 y765→736",
+                "DL.mt-10 grid max-w-md grid-cols-3 gap-4 y645→616",
+                "DIV.rounded-3xl bg-white p-4 ring-1 ring-lin y789→760",
+                "DIV.mt-8 flex flex-wrap gap-3 y562→533",
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 28,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 167,
+          "fcpMs": 1126,
+          "lcpMs": 1126,
+          "loadMs": 3313,
+          "cls": 0.012,
+          "transferKB": 584,
+          "requests": 30,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 490,
+          "pageTransferKB": 556,
+          "shifts": [
+            {
+              "v": 0.012,
+              "t": 2375,
+              "src": [
+                "DIV.grid grid-cols-2 gap-3 sm:gap-4 y765→736",
+                "DL.mt-10 grid max-w-md grid-cols-3 gap-4 y645→616",
+                "DIV.rounded-3xl bg-white p-4 ring-1 ring-lin y789→760",
+                "DIV.mt-8 flex flex-wrap gap-3 y562→533",
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 28,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "https://caspian.muradgojayev.com/",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 43,
+        "fcpMs": 114,
+        "lcpMs": 354,
+        "loadMs": 380,
+        "cls": 0,
+        "transferKB": 594,
+        "requests": 38,
+        "pageTransferKB": 560,
+        "pageRequests": 36,
+        "renderBlocking": 1,
+        "domNodes": 490
+      },
+      "detail": [
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 43,
+          "fcpMs": 114,
+          "lcpMs": 662,
+          "loadMs": 528,
+          "cls": 0,
+          "transferKB": 594,
+          "requests": 38,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 490,
+          "pageTransferKB": 560,
+          "shifts": [],
+          "pageRequests": 36,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 245,
+          "fcpMs": 338,
+          "lcpMs": 354,
+          "loadMs": 380,
+          "cls": 0,
+          "transferKB": 595,
+          "requests": 38,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 490,
+          "pageTransferKB": 560,
+          "shifts": [],
+          "pageRequests": 36,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 1,
+          "ttfbMs": 36,
+          "fcpMs": 101,
+          "lcpMs": 125,
+          "loadMs": 158,
+          "cls": 0,
+          "transferKB": 594,
+          "requests": 38,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 490,
+          "pageTransferKB": 560,
+          "shifts": [],
+          "pageRequests": 36,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "https://caspian.muradgojayev.com/kataloq",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 3,
+        "ttfbMs": 171,
+        "fcpMs": 1378,
+        "lcpMs": 1378,
+        "loadMs": 4114,
+        "cls": 0,
+        "transferKB": 783,
+        "requests": 42,
+        "pageTransferKB": 747,
+        "pageRequests": 39,
+        "renderBlocking": 1,
+        "domNodes": 834
+      },
+      "detail": [
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 168,
+          "fcpMs": 1378,
+          "lcpMs": 1378,
+          "loadMs": 4111,
+          "cls": 0,
+          "transferKB": 783,
+          "requests": 42,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 834,
+          "pageTransferKB": 747,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 3173,
+              "src": [
+                "LABEL.ml-auto flex items-center gap-2 text-sm y371→371",
+                "NAV.flex items-center rounded-full border bo y132→132",
+                "P.text-sm text-muted y327→327"
+              ]
+            }
+          ],
+          "pageRequests": 39,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 3,
+          "ttfbMs": 403,
+          "fcpMs": 1579,
+          "lcpMs": 1587,
+          "loadMs": 4361,
+          "cls": 0,
+          "transferKB": 782,
+          "requests": 42,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 834,
+          "pageTransferKB": 747,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 3406,
+              "src": [
+                "LABEL.ml-auto flex items-center gap-2 text-sm y371→371",
+                "NAV.flex items-center rounded-full border bo y132→132",
+                "P.text-sm text-muted y327→327"
+              ]
+            }
+          ],
+          "pageRequests": 39,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 3,
+          "ttfbMs": 171,
+          "fcpMs": 1351,
+          "lcpMs": 1351,
+          "loadMs": 4114,
+          "cls": 0,
+          "transferKB": 783,
+          "requests": 42,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 834,
+          "pageTransferKB": 747,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 3167,
+              "src": [
+                "LABEL.ml-auto flex items-center gap-2 text-sm y371→371",
+                "NAV.flex items-center rounded-full border bo y132→132",
+                "P.text-sm text-muted y327→327"
+              ]
+            }
+          ],
+          "pageRequests": 39,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "https://caspian.muradgojayev.com/kataloq",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 1,
+        "ttfbMs": 37,
+        "fcpMs": 117,
+        "lcpMs": 122,
+        "loadMs": 174,
+        "cls": 0.001,
+        "transferKB": 819,
+        "requests": 62,
+        "pageTransferKB": 767,
+        "pageRequests": 60,
+        "renderBlocking": 1,
+        "domNodes": 834
+      },
+      "detail": [
+        {
+          "interstitialMs": 1,
+          "ttfbMs": 44,
+          "fcpMs": 117,
+          "lcpMs": 141,
+          "loadMs": 183,
+          "cls": 0.001,
+          "transferKB": 819,
+          "requests": 62,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 834,
+          "pageTransferKB": 767,
+          "shifts": [
+            {
+              "v": 0.001,
+              "t": 408,
+              "src": [
+                "DIV.flex flex-1 flex-col gap-2 p-4 y803→877"
+              ]
+            }
+          ],
+          "pageRequests": 60,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 37,
+          "fcpMs": 122,
+          "lcpMs": 122,
+          "loadMs": 174,
+          "cls": 0.001,
+          "transferKB": 819,
+          "requests": 62,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 834,
+          "pageTransferKB": 767,
+          "shifts": [
+            {
+              "v": 0.001,
+              "t": 129,
+              "src": [
+                "DIV.flex flex-1 flex-col gap-2 p-4 y803→877"
+              ]
+            }
+          ],
+          "pageRequests": 60,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 1,
+          "ttfbMs": 36,
+          "fcpMs": 101,
+          "lcpMs": 101,
+          "loadMs": 164,
+          "cls": 0.001,
+          "transferKB": 819,
+          "requests": 62,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 834,
+          "pageTransferKB": 767,
+          "shifts": [
+            {
+              "v": 0.001,
+              "t": 111,
+              "src": [
+                "DIV.flex flex-1 flex-col gap-2 p-4 y803→877"
+              ]
+            }
+          ],
+          "pageRequests": 60,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "https://caspian.muradgojayev.com/mehsul/deepblue-istileshdirilmish-ish-kostyumu",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 169,
+        "fcpMs": 1074,
+        "lcpMs": 1081,
+        "loadMs": 3234,
+        "cls": 0,
+        "transferKB": 570,
+        "requests": 33,
+        "pageTransferKB": 540,
+        "pageRequests": 31,
+        "renderBlocking": 1,
+        "domNodes": 357
+      },
+      "detail": [
+        {
+          "interstitialMs": 1,
+          "ttfbMs": 169,
+          "fcpMs": 1081,
+          "lcpMs": 1081,
+          "loadMs": 3221,
+          "cls": 0,
+          "transferKB": 569,
+          "requests": 33,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 357,
+          "pageTransferKB": 540,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 2275,
+              "src": [
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 31,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 168,
+          "fcpMs": 1074,
+          "lcpMs": 1074,
+          "loadMs": 3234,
+          "cls": 0,
+          "transferKB": 570,
+          "requests": 33,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 357,
+          "pageTransferKB": 540,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 2283,
+              "src": [
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 31,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 170,
+          "fcpMs": 1042,
+          "lcpMs": 1090,
+          "loadMs": 3269,
+          "cls": 0,
+          "transferKB": 572,
+          "requests": 33,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 357,
+          "pageTransferKB": 540,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 2308,
+              "src": [
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 31,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "https://caspian.muradgojayev.com/mehsul/deepblue-istileshdirilmish-ish-kostyumu",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 35,
+        "fcpMs": 118,
+        "lcpMs": 118,
+        "loadMs": 171,
+        "cls": 0,
+        "transferKB": 603,
+        "requests": 43,
+        "pageTransferKB": 564,
+        "pageRequests": 41,
+        "renderBlocking": 1,
+        "domNodes": 357
+      },
+      "detail": [
+        {
+          "interstitialMs": 3,
+          "ttfbMs": 35,
+          "fcpMs": 115,
+          "lcpMs": 115,
+          "loadMs": 163,
+          "cls": 0,
+          "transferKB": 603,
+          "requests": 43,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 357,
+          "pageTransferKB": 564,
+          "shifts": [],
+          "pageRequests": 41,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 35,
+          "fcpMs": 118,
+          "lcpMs": 118,
+          "loadMs": 171,
+          "cls": 0,
+          "transferKB": 603,
+          "requests": 43,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 357,
+          "pageTransferKB": 564,
+          "shifts": [],
+          "pageRequests": 41,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 45,
+          "fcpMs": 134,
+          "lcpMs": 134,
+          "loadMs": 185,
+          "cls": 0,
+          "transferKB": 602,
+          "requests": 43,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 357,
+          "pageTransferKB": 564,
+          "shifts": [],
+          "pageRequests": 41,
+          "renderBlocking": 1
+        }
+      ]
+    }
+  ]
+}

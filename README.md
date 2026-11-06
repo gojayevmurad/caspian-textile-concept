@@ -17,17 +17,18 @@ caspiantextile.com saytının sıfırdan yenidən qurulmasıdır. Eyni məhsulla
 - public REST API with OpenAPI;
 - technical SEO/GEO (hreflang sitemap, JSON-LD, `llms.txt`, 301 map from the old WordPress URLs).
 
-## Nəticələr (lokal production build, real Chrome, eyni skript)
+## Nəticələr (production: Hetzner + Cloudflare Bakı PoP, Bakıdan ölçülüb, eyni skript)
 
 | | Köhnə sayt | Yeni sayt |
 |---|---|---|
-| Ana səhifə, mobil Slow 4G: FCP / LCP | 7.0 s / 31.1 s | 0.76 s / 0.76 s |
+| Ana səhifə, mobil Slow 4G: FCP / LCP | 7.0 s / 31.1 s | 1.13 s / 1.13 s |
+| Ana səhifə, desktop: TTFB / LCP | 1.79 s / 7.5 s | 43 ms / 0.35 s |
 | Məhsul səhifəsi CLS (desktop) | 1.03 | 0 |
-| Ana səhifənin transfer həcmi (mobil) | 6.3 MB, 123 sorğu | 436 KB, 24 sorğu |
+| Ana səhifənin transfer həcmi (mobil) | 6.3 MB, 123 sorğu | 556 KB, 28 sorğu |
 | Render-blocking resurs | 17–18 | 1 |
 | Lighthouse (mobil, lokal) | ölçülə bilmir (HTTP 409) | Accessibility 100, Best Practices 100, Performance 79–90 |
 
-Xam data: `data/benchmarks/*.json`. Skript: `scripts/bench.mjs`. Production ölçmələri deploy-dan sonra `after-production.json` faylına yazılacaq və case study səhifəsi onları avtomatik istifadə edəcək.
+Xam data: `data/benchmarks/*.json` (`after-production.json` — 6 noyabr 2026). Skript: `scripts/bench.mjs`. Canlı: https://caspian.muradgojayev.com
 
 ## Struktur
 
