@@ -1,0 +1,435 @@
+{
+ "measuredAt": "2026-11-06T09:18:52.770Z",
+ "results": [
+  {
+   "url": "https://caspiantextile.com/",
+   "profile": "mobile-slow4g",
+   "runs": 3,
+   "summary": {
+    "interstitialMs": 674,
+    "ttfbMs": 1759,
+    "fcpMs": 4221,
+    "lcpMs": 33173,
+    "loadMs": 33242,
+    "cls": 0.014,
+    "transferKB": 7145,
+    "requests": 127,
+    "pageTransferKB": 6977,
+    "pageRequests": 125,
+    "renderBlocking": 18,
+    "domNodes": 2133
+   },
+   "detail": [
+    {
+     "interstitialMs": 687,
+     "ttfbMs": 2200,
+     "fcpMs": 4511,
+     "lcpMs": 35467,
+     "loadMs": 38463,
+     "cls": 0.014,
+     "transferKB": 7850,
+     "requests": 127,
+     "documents": 2,
+     "documentStatuses": [
+      409,
+      200
+     ],
+     "domNodes": 2132,
+     "pageTransferKB": 7682,
+     "pageRequests": 125,
+     "renderBlocking": 18
+    },
+    {
+     "interstitialMs": 674,
+     "ttfbMs": 1759,
+     "fcpMs": 4174,
+     "lcpMs": 32274,
+     "loadMs": 32421,
+     "cls": 0.014,
+     "transferKB": 6967,
+     "requests": 127,
+     "documents": 2,
+     "documentStatuses": [
+      409,
+      200
+     ],
+     "domNodes": 2133,
+     "pageTransferKB": 6800,
+     "pageRequests": 125,
+     "renderBlocking": 18
+    },
+    {
+     "interstitialMs": 669,
+     "ttfbMs": 1728,
+     "fcpMs": 4221,
+     "lcpMs": 33173,
+     "loadMs": 33242,
+     "cls": 0.014,
+     "transferKB": 7145,
+     "requests": 127,
+     "documents": 2,
+     "documentStatuses": [
+      409,
+      200
+     ],
+     "domNodes": 2154,
+     "pageTransferKB": 6977,
+     "pageRequests": 125,
+     "renderBlocking": 18
+    }
+   ]
+  },
+  {
+   "url": "https://caspiantextile.com/",
+   "profile": "desktop-cable",
+   "runs": 3,
+   "summary": {
+    "interstitialMs": 669,
+    "ttfbMs": 1770,
+    "fcpMs": 2597,
+    "lcpMs": 8761,
+    "loadMs": 8755,
+    "cls": 0.005,
+    "transferKB": 12227,
+    "requests": 140,
+    "pageTransferKB": 12046,
+    "pageRequests": 137,
+    "renderBlocking": 18,
+    "domNodes": 2134
+   },
+   "detail": [
+    {
+     "interstitialMs": 661,
+     "ttfbMs": 1718,
+     "fcpMs": 2545,
+     "lcpMs": 3825,
+     "loadMs": 3828,
+     "cls": 0.001,
+     "transferKB": 12227,
+     "requests": 140,
+     "documents": 2,
+     "documentStatuses": [
+      409,
+      200
+     ],
+     "domNodes": 2124,
+     "pageTransferKB": 12046,
+     "pageRequests": 137,
+     "renderBlocking": 18
+    },
+    {
+     "interstitialMs": 669,
+     "ttfbMs": 1770,
+     "fcpMs": 2597,
+     "lcpMs": 8761,
+     "loadMs": 8755,
+     "cls": 0.005,
+     "transferKB": 11552,
+     "requests": 140,
+     "documents": 2,
+     "documentStatuses": [
+      409,
+      200
+     ],
+     "domNodes": 2134,
+     "pageTransferKB": 11371,
+     "pageRequests": 137,
+     "renderBlocking": 18
+    },
+    {
+     "error": "TimeoutError: page.goto: Timeout 120000ms exceeded.\nCall log:\n  - navigating to \"https://caspiantextile.com/\", waiting until \"load\"\n"
+    }
+   ]
+  },
+  {
+   "url": "https://caspiantextile.com/shop/",
+   "profile": "mobile-slow4g",
+   "runs": 3,
+   "summary": {
+    "interstitialMs": 2,
+    "ttfbMs": 659,
+    "fcpMs": 698,
+    "lcpMs": 698,
+    "loadMs": 677,
+    "cls": 0,
+    "transferKB": 1,
+    "requests": 2,
+    "pageTransferKB": 1,
+    "pageRequests": 2,
+    "renderBlocking": 0,
+    "domNodes": 6
+   },
+   "detail": [
+    {
+     "interstitialMs": 2,
+     "ttfbMs": 662,
+     "fcpMs": 810,
+     "lcpMs": 810,
+     "loadMs": 691,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 1,
+     "ttfbMs": 647,
+     "fcpMs": 681,
+     "lcpMs": 681,
+     "loadMs": 662,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 2,
+     "ttfbMs": 659,
+     "fcpMs": 698,
+     "lcpMs": 698,
+     "loadMs": 677,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    }
+   ],
+   "invalid": true
+  },
+  {
+   "url": "https://caspiantextile.com/shop/",
+   "profile": "desktop-cable",
+   "runs": 3,
+   "summary": {
+    "interstitialMs": 2,
+    "ttfbMs": 657,
+    "fcpMs": 698,
+    "lcpMs": 698,
+    "loadMs": 671,
+    "cls": 0,
+    "transferKB": 1,
+    "requests": 2,
+    "pageTransferKB": 1,
+    "pageRequests": 2,
+    "renderBlocking": 0,
+    "domNodes": 6
+   },
+   "detail": [
+    {
+     "interstitialMs": 2,
+     "ttfbMs": 657,
+     "fcpMs": 698,
+     "lcpMs": 698,
+     "loadMs": 671,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 1,
+     "ttfbMs": 657,
+     "fcpMs": 689,
+     "lcpMs": 689,
+     "loadMs": 671,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 3,
+     "ttfbMs": 664,
+     "fcpMs": 699,
+     "lcpMs": 699,
+     "loadMs": 679,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    }
+   ],
+   "invalid": true
+  },
+  {
+   "url": "https://caspiantextile.com/product/deepblue-workwear-suit/",
+   "profile": "mobile-slow4g",
+   "runs": 3,
+   "summary": {
+    "interstitialMs": 2,
+    "ttfbMs": 650,
+    "fcpMs": 698,
+    "lcpMs": 698,
+    "loadMs": 672,
+    "cls": 0,
+    "transferKB": 1,
+    "requests": 2,
+    "pageTransferKB": 1,
+    "pageRequests": 2,
+    "renderBlocking": 0,
+    "domNodes": 6
+   },
+   "detail": [
+    {
+     "error": "TimeoutError: page.goto: Timeout 120000ms exceeded.\nCall log:\n  - navigating to \"https://caspiantextile.com/product/deepblue-workwear-suit/\", waiting until \"load\"\n"
+    },
+    {
+     "interstitialMs": 1,
+     "ttfbMs": 650,
+     "fcpMs": 697,
+     "lcpMs": 697,
+     "loadMs": 671,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 2,
+     "ttfbMs": 650,
+     "fcpMs": 698,
+     "lcpMs": 698,
+     "loadMs": 672,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    }
+   ],
+   "invalid": true
+  },
+  {
+   "url": "https://caspiantextile.com/product/deepblue-workwear-suit/",
+   "profile": "desktop-cable",
+   "runs": 3,
+   "summary": {
+    "interstitialMs": 1,
+    "ttfbMs": 658,
+    "fcpMs": 701,
+    "lcpMs": 701,
+    "loadMs": 672,
+    "cls": 0,
+    "transferKB": 1,
+    "requests": 2,
+    "pageTransferKB": 1,
+    "pageRequests": 2,
+    "renderBlocking": 0,
+    "domNodes": 6
+   },
+   "detail": [
+    {
+     "interstitialMs": 1,
+     "ttfbMs": 651,
+     "fcpMs": 677,
+     "lcpMs": 677,
+     "loadMs": 662,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 2,
+     "ttfbMs": 682,
+     "fcpMs": 718,
+     "lcpMs": 718,
+     "loadMs": 695,
+     "cls": 0,
+     "transferKB": 1,
+     "requests": 2,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 2,
+     "renderBlocking": 0
+    },
+    {
+     "interstitialMs": 1,
+     "ttfbMs": 658,
+     "fcpMs": 701,
+     "lcpMs": 701,
+     "loadMs": 672,
+     "cls": 0,
+     "transferKB": 0,
+     "requests": 1,
+     "documents": 1,
+     "documentStatuses": [
+      429
+     ],
+     "domNodes": 6,
+     "pageTransferKB": 1,
+     "pageRequests": 1,
+     "renderBlocking": 0
+    }
+   ],
+   "invalid": true
+  }
+ ],
+ "note": "Same as baseline.json but castexuniforma25.local fails DNS instantly (Windows/Android-like). shop/product runs are INVALID: the site served only the 409 interstitial (6 DOM nodes) - likely rate limiting after repeated runs."
+}

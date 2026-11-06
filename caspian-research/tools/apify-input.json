@@ -1,0 +1,88 @@
+{
+ "startUrls": [
+  {
+   "url": "https://caspiantextile.com/?d=1",
+   "userData": {
+    "label": "DATA"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/az/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/ru/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/about-caspian-textile-uniforms-parthnes/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/contact-caspian-textile/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/shop/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/product-category/construction-and-heavy-industr/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/product-category/healthcare-and-medicine/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/product/deepblue-workwear-suit/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/product/corepolo-blue-shirt/",
+   "userData": {
+    "label": "PAGE"
+   }
+  },
+  {
+   "url": "https://caspiantextile.com/all-the-best-fashion-influencers-2/",
+   "userData": {
+    "label": "PAGE"
+   }
+  }
+ ],
+ "maxConcurrency": 2,
+ "maxRequestRetries": 2,
+ "pageLoadTimeoutSecs": 120,
+ "pageFunctionTimeoutSecs": 1500,
+ "linkSelector": "",
+ "headless": true,
+ "ignoreSslErrors": false,
+ "proxyConfiguration": {
+  "useApifyProxy": true
+ },
+ "launcher": "chromium",
+ "waitUntil": "load"
+}
