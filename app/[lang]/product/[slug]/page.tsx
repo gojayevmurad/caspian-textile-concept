@@ -57,7 +57,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       product.summary.slice(0, 160) ||
       `${product.name} — ${t.meta.tagline}`,
     paths,
-    image: product.image ? `/media/${largest(product.image)}` : undefined,
   });
 }
 

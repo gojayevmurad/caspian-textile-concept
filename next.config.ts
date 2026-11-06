@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   experimental: { globalNotFound: true },
   // Trailing slashes are handled in proxy.ts so legacy URLs resolve in a single 301 hop.
   skipTrailingSlashRedirect: true,
+  // Files read from disk at runtime must be traced into the standalone output.
+  outputFileTracingIncludes: {
+    "/api/spec/**": ["./src/assets/fonts/**", "./public/brand/logo.png"],
+    "/**/opengraph-image": ["./public/brand/logo.png"],
+  },
   turbopack: {
     rules: { "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" } },
   },
