@@ -1,6 +1,5 @@
 "use client";
-import { useMemo, useState, useTransition } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import type { CategoryView, ProductSummary } from "@/src/lib/catalog/queries";
 import type { Locale } from "@/src/lib/i18n/config";
@@ -46,10 +45,14 @@ export function CatalogBrowser({
   /** Facet locked by the page (e.g. an industry landing page). */
   fixed?: { facet: Facet; value: string };
 }) {
-  const params = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const [, startTransition] = useTransition();
+  // SSR renders the unfiltered list (crawlable, no layout shift); URL filters apply after mount.
+  const [params, setParams] = useState(() => new URLSearchParams());
+  useEffect(() => {
+    const read = () => setParams(new URLSearchParams(window.location.search));
+    read();
+    window.addEventListener("popstate", read);
+    return () => window.removeEventListener("popstate", read);
+  }, []);
   const [limit, setLimit] = useState(PAGE);
   const [open, setOpen] = useState(false);
 
@@ -111,9 +114,13 @@ export function CatalogBrowser({
   const update = (next: URLSearchParams) => {
     setLimit(PAGE);
     const qs = next.toString();
-    startTransition(() =>
-      router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false }),
+    // Instant client-side filtering: update the URL (shareable) without a server round-trip.
+    window.history.replaceState(
+      window.history.state,
+      "",
+      qs ? `${window.location.pathname}?${qs}` : window.location.pathname,
     );
+    setParams(next);
   };
   const toggle = (f: Facet, key: string) => {
     const next = new URLSearchParams(params);

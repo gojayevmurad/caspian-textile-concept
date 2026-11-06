@@ -45,7 +45,7 @@ export function htmlToText(html: string): string {
 /** First n sentences of a text (used for summaries and meta descriptions). */
 export function firstSentences(text: string, n = 2, max = 300): string {
   const sentences = text.match(/[^.!?]+[.!?]+/g) ?? [text];
-  let out = sentences.slice(0, n).join(" ").trim();
+  let out = sentences.slice(0, n).map((x) => x.trim()).join(" ");
   if (out.length > max)
     out = out.slice(0, max - 1).replace(/\s+\S*$/, "") + "…";
   return out;

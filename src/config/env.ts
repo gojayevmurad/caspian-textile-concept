@@ -35,6 +35,8 @@ export const envSchema = z
     NOTIFY_EMAIL: optional,
     CLOUDFLARE_ZONE_ID: optional,
     CLOUDFLARE_API_TOKEN: optional,
+    // JSON map of digital pattern keys → Polar product IDs, e.g. {"workwear-set":"<id>"}
+    POLAR_PATTERN_PRODUCTS: optional,
     ANTHROPIC_API_KEY: optional,
     ANTHROPIC_MODEL: z.string().default("claude-opus-5-5"),
   })

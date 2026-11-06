@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { CheckCircle2, Plus, Trash2, Upload, WifiOff } from "lucide-react";
 import { quote, totalQty, useQuote, type QuoteLine } from "./quote-store";
+import { useQueryParam } from "./use-query-param";
 
 export type QuoteLabels = {
   title: string;
@@ -113,8 +113,8 @@ export function QuoteForm({
   presetSku?: string;
 }) {
   const items = useQuote();
-  const search = useSearchParams();
-  presetSku ??= search.get("sku") ?? undefined;
+  const urlSku = useQueryParam("sku");
+  const sku = presetSku ?? urlSku ?? undefined;
   const [state, setState] = useState<{
     status: "idle" | "sending" | "done" | "queued" | "error";
     number?: string;
@@ -129,12 +129,11 @@ export function QuoteForm({
   const previewImage = items.find((i) => i.image)?.image;
   const total = totalQty(items);
 
-  useEffect(() => {
-    if (!logo) return setLogoUrl(null);
-    const url = URL.createObjectURL(logo);
-    setLogoUrl(url);
-    return () => URL.revokeObjectURL(url);
-  }, [logo]);
+  const pickLogo = (file: File | null) => {
+    if (logoUrl) URL.revokeObjectURL(logoUrl);
+    setLogo(file);
+    setLogoUrl(file ? URL.createObjectURL(file) : null);
+  };
 
   useEffect(() => {
     const onOnline = () =>
@@ -183,7 +182,7 @@ export function QuoteForm({
       setState({ status: "done", number });
       if (kind === "quote") quote.clear();
       formRef.current?.reset();
-      setLogo(null);
+      pickLogo(null);
     } catch (err) {
       if (err instanceof TypeError) {
         // Network failure: keep the request and retry automatically when back online.
@@ -348,7 +347,7 @@ export function QuoteForm({
                   name="logoFile"
                   accept="image/png,image/jpeg,image/webp"
                   className="sr-only"
-                  onChange={(e) => setLogo(e.target.files?.[0] ?? null)}
+                  onChange={(e) => pickLogo(e.target.files?.[0] ?? null)}
                 />
               </label>
               {logo && (

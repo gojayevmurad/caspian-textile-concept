@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { SiteHeader } from "@/src/components/site-header";
@@ -23,7 +24,8 @@ export default async function Page() {
           </Suspense>
         </div>
         <p className="auth-legal">
-          <a href="/">← Sayta qayıt</a> · <a href="/mexfilik">Məxfilik</a>
+          <Link href="/">← Sayta qayıt</Link> ·{" "}
+          <Link href="/mexfilik">Məxfilik</Link>
         </p>
       </main>
     </>

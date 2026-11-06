@@ -1,12 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import type { Locale } from "@/src/lib/i18n/config";
 
 const labels: Record<Locale, string> = { az: "AZ", en: "EN", ru: "RU" };
 const homes: Record<Locale, string> = { az: "/", en: "/en", ru: "/ru" };
 
-/** Reads the page's own hreflang alternates, so product/category slugs map correctly per language. */
+/** Uses the page's own hreflang alternates at click time, so localized slugs map correctly. */
 export function LanguageSwitcher({
   current,
   label,
@@ -14,19 +12,15 @@ export function LanguageSwitcher({
   current: Locale;
   label: string;
 }) {
-  const pathname = usePathname();
-  const [links, setLinks] = useState<Record<Locale, string>>(homes);
-  useEffect(() => {
-    const next = { ...homes };
-    document
-      .querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]')
-      .forEach((l) => {
-        const lang = l.hreflang as Locale;
-        if (lang in next)
-          next[lang] = new URL(l.href).pathname + new URL(l.href).search;
-      });
-    setLinks(next);
-  }, [pathname]);
+  const go = (e: React.MouseEvent<HTMLAnchorElement>, l: Locale) => {
+    const alt = document.querySelector<HTMLLinkElement>(
+      `link[rel="alternate"][hreflang="${l}"]`,
+    );
+    if (!alt) return; // fall back to the locale home (the href)
+    e.preventDefault();
+    const url = new URL(alt.href);
+    window.location.assign(url.pathname + url.search);
+  };
   return (
     <nav
       aria-label={label}
@@ -35,9 +29,10 @@ export function LanguageSwitcher({
       {(Object.keys(labels) as Locale[]).map((l) => (
         <a
           key={l}
-          href={links[l]}
+          href={homes[l]}
           hrefLang={l}
           lang={l}
+          onClick={(e) => go(e, l)}
           aria-current={l === current ? "true" : undefined}
           className={`rounded-full px-2.5 py-1.5 ${l === current ? "bg-brand text-white" : "text-muted hover:text-ink"}`}
         >

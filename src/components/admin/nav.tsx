@@ -43,12 +43,12 @@ export function AdminNav() {
           </Link>
         );
       })}
-      <a
+      <Link
         href="/"
         className="mt-4 flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-white/75 hover:bg-white/10 hover:text-white"
       >
         <ExternalLink className="size-4" aria-hidden /> Sayta keç
-      </a>
+      </Link>
     </nav>
   );
 }

@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 import { Search } from "lucide-react";
+import { useQueryParam } from "./use-query-param";
 
 type Result = {
   id: number;
@@ -21,14 +21,14 @@ export function SearchBox({
   productBase: string;
   labels: { placeholder: string; noResults: string; hint: string };
 }) {
-  const params = useSearchParams();
-  const router = useRouter();
-  const [q, setQ] = useState(params.get("q") ?? "");
+  const urlQ = useQueryParam("q");
+  const [typed, setQ] = useState<string | null>(null);
+  const q = typed ?? urlQ ?? "";
   const [results, setResults] = useState<Result[] | null>(null);
   const input = useRef<HTMLInputElement>(null);
   useEffect(() => input.current?.focus(), []);
   useEffect(() => {
-    if (q.trim().length < 2) return setResults(null);
+    if (q.trim().length < 2) return;
     const ctrl = new AbortController();
     const id = setTimeout(async () => {
       try {
@@ -37,14 +37,18 @@ export function SearchBox({
           { signal: ctrl.signal },
         );
         setResults((await res.json()).results);
-        router.replace(`?q=${encodeURIComponent(q)}`, { scroll: false });
+        window.history.replaceState(
+          window.history.state,
+          "",
+          `?q=${encodeURIComponent(q)}`,
+        );
       } catch {}
     }, 160);
     return () => {
       clearTimeout(id);
       ctrl.abort();
     };
-  }, [q, locale, router]);
+  }, [q, locale]);
   return (
     <div>
       <label className="relative block">
@@ -65,7 +69,7 @@ export function SearchBox({
         />
       </label>
       <div aria-live="polite" className="mt-6">
-        {results === null ? (
+        {results === null || q.trim().length < 2 ? (
           <p className="text-sm text-muted">{labels.hint}</p>
         ) : results.length === 0 ? (
           <p className="text-muted">{labels.noResults}</p>

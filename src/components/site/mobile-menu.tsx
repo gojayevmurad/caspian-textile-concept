@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 export function MobileMenu({
@@ -16,8 +15,6 @@ export function MobileMenu({
   cta: { href: string; label: string };
 }) {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
     document.documentElement.style.overflow = open ? "hidden" : "";
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
@@ -57,7 +54,11 @@ export function MobileMenu({
               </li>
             ))}
           </ul>
-          <Link href={cta.href} className="btn-primary mt-6 w-full">
+          <Link
+            href={cta.href}
+            onClick={() => setOpen(false)}
+            className="btn-primary mt-6 w-full"
+          >
             {cta.label}
           </Link>
         </div>

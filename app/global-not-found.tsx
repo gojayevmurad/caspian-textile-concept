@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./[lang]/site.css";
 import type { Metadata } from "next";
 
@@ -19,9 +20,9 @@ export default function GlobalNotFound() {
           <p className="mt-2 text-muted">
             Səhifə tapılmadı · Page not found · Страница не найдена
           </p>
-          <a href="/" className="btn-primary mt-6">
+          <Link href="/" className="btn-primary mt-6">
             Ana səhifə
-          </a>
+          </Link>
         </main>
       </body>
     </html>

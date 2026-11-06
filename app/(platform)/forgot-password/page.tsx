@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Suspense } from "react";
 import { SiteHeader } from "@/src/components/site-header";
 import { AuthForm } from "@/src/components/auth-form";
@@ -18,8 +19,8 @@ export default function Page() {
           </Suspense>
         </div>
         <p className="auth-legal">
-          By continuing, you agree to our <a href="/terms">Terms</a> and{" "}
-          <a href="/privacy">Privacy Policy</a>.
+          <Link href="/">← Sayta qayıt</Link> ·{" "}
+          <Link href="/mexfilik">Məxfilik</Link>
         </p>
       </main>
     </>
