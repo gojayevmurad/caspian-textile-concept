@@ -6,7 +6,7 @@ Verified locally on 6 November 2026 (Baku, macOS, Docker PostgreSQL 18.6). Templ
 |---|---|
 | Strict TypeScript (`next typegen && tsc`) | PASS |
 | ESLint | PASS (0 errors; 14 warnings: intentional `<img>`/`<picture>` usage) |
-| Unit tests (Vitest) | 114 passed — routing/i18n, HTML cleanup, colour/size normalization, upload sniffing, RFQ validation, demo masking, role guards (`requireWriter` 403 for `demo_viewer`/`customer`, 401 anonymous) |
+| Unit tests (Vitest) | 59 passed — routing/i18n, HTML cleanup, colour/size normalization, upload sniffing, RFQ validation, demo masking, role guards (`requireWriter` 403 for `demo_viewer`/`customer`, 401 anonymous) |
 | Integration tests | 12 passed, 2 skipped (template webhook/billing/analytics suites against isolated `_test` DB) |
 | Playwright E2E | 11 passed — az default + language switch keeps page, legacy 301 in one hop + 410, catalogue → product → basket → RFQ, typo-tolerant search, no overflow at 360 px (4 pages), admin auth, **demo bypass attempt rejected server-side with DB unchanged**, admin edit + audit log |
 | Production build | PASS (`next build`, standalone) |

@@ -65,8 +65,15 @@ export const envSchema = z
       issue("RESEND_API_KEY is required to send email");
     if (Boolean(v.GOOGLE_CLIENT_ID) !== Boolean(v.GOOGLE_CLIENT_SECRET))
       issue("Configure both Google credentials");
+    // Subscriptions (template billing) need the webhook + benefit; the digital-pattern
+    // guest checkout only needs the token (files are delivered by Polar's benefit).
+    const subscriptions =
+      v.POLAR_MONTHLY_PRODUCT_ID ||
+      v.POLAR_YEARLY_PRODUCT_ID ||
+      v.POLAR_LIFETIME_PRODUCT_ID;
     if (
       v.POLAR_ACCESS_TOKEN &&
+      subscriptions &&
       (!v.POLAR_WEBHOOK_SECRET || !v.POLAR_PRO_BENEFIT_ID)
     )
       issue("Polar requires webhook secret and Pro benefit ID");

@@ -9,5 +9,10 @@ export default defineConfig({
       "@": fileURLToPath(new URL(".", import.meta.url)),
     },
   },
-  test: { environment: "node", fileParallelism: false, testTimeout: 20000 },
+  test: {
+    exclude: ["**/node_modules/**", ".next/**"],
+    environment: "node",
+    fileParallelism: false,
+    testTimeout: 20000,
+  },
 });

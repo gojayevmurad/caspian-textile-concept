@@ -48,9 +48,16 @@ it("runs without providers in development", () =>
   expect(envSchema.parse({}).POLAR_ENVIRONMENT).toBe("sandbox"));
 it("fails closed on incomplete production config", () =>
   expect(envSchema.safeParse({ NODE_ENV: "production" }).success).toBe(false));
-it("requires the benefit and webhook when enabling Polar", () =>
+it("requires the benefit and webhook when enabling Polar subscriptions", () =>
+  expect(
+    envSchema.safeParse({
+      POLAR_ACCESS_TOKEN: "token",
+      POLAR_MONTHLY_PRODUCT_ID: "p",
+    }).success,
+  ).toBe(false));
+it("allows a token alone for digital-pattern guest checkout", () =>
   expect(envSchema.safeParse({ POLAR_ACCESS_TOKEN: "token" }).success).toBe(
-    false,
+    true,
   ));
 it("never grants access with an expired lease", () => {
   expect(canUsePro({ pro: true, validUntil: new Date(0) })).toBe(false);
