@@ -174,9 +174,7 @@ export function AuthForm({
             Already have an account? <Link href="/sign-in">Sign in</Link>
           </>
         ) : (
-          <>
-            New here? <Link href="/sign-up">Create an account</Link>
-          </>
+          <>Hesablar operator tərəfindən yaradılır (açıq qeydiyyat yoxdur).</>
         )}
       </p>
     </>

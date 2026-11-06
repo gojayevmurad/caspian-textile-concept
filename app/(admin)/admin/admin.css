@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "../../tokens.css";
+
+@layer base {
+  body {
+    @apply bg-surface text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-hivis);
+    outline-offset: 2px;
+  }
+}
+@utility card {
+  @apply rounded-2xl border border-line bg-white;
+}
+@utility th {
+  @apply px-3 py-2 text-left text-xs font-semibold tracking-wide text-muted uppercase;
+}
+@utility td {
+  @apply border-t border-line px-3 py-2 align-middle;
+}

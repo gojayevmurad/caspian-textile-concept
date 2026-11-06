@@ -36,7 +36,7 @@ export const envSchema = z
     CLOUDFLARE_ZONE_ID: optional,
     CLOUDFLARE_API_TOKEN: optional,
     ANTHROPIC_API_KEY: optional,
-    ANTHROPIC_MODEL: z.string().default("claude-sonnet-5-5"),
+    ANTHROPIC_MODEL: z.string().default("claude-opus-5-5"),
   })
   .superRefine((v, ctx) => {
     const issue = (message: string) =>
