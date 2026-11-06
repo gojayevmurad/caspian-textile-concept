@@ -7,9 +7,11 @@ import fs from "node:fs";
 
 const [out, ...urls] = process.argv.slice(2);
 const RUNS = +(process.env.RUNS || 3);
-const MAC_CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const MAC_CHROME =
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 // Use local Chrome when present (as for the baseline), else Playwright's Chromium.
-const CHROME = process.env.CHROME || (fs.existsSync(MAC_CHROME) ? MAC_CHROME : undefined);
+const CHROME =
+  process.env.CHROME || (fs.existsSync(MAC_CHROME) ? MAC_CHROME : undefined);
 const PROFILES = {
   "mobile-slow4g": {
     ctx: {
@@ -90,7 +92,14 @@ for (const url of urls)
           for (const e of l.getEntries())
             if (!e.hadRecentInput) {
               window.__cls += e.value;
-              (window.__shifts ||= []).push({ v: +e.value.toFixed(3), t: Math.round(e.startTime), src: e.sources.map((x) => `${x.node?.nodeName}.${String(x.node?.className || "").slice(0, 40)} y${Math.round(x.previousRect.y)}→${Math.round(x.currentRect.y)}`) });
+              (window.__shifts ||= []).push({
+                v: +e.value.toFixed(3),
+                t: Math.round(e.startTime),
+                src: e.sources.map(
+                  (x) =>
+                    `${x.node?.nodeName}.${String(x.node?.className || "").slice(0, 40)} y${Math.round(x.previousRect.y)}→${Math.round(x.currentRect.y)}`,
+                ),
+              });
             }
         }).observe({ type: "layout-shift", buffered: true });
       });
@@ -135,7 +144,9 @@ for (const url of urls)
                 1024,
             ),
             pageRequests: performance.getEntriesByType("resource").length + 1,
-          shifts: (window.__shifts || []).sort((a, b) => b.v - a.v).slice(0, 3),
+            shifts: (window.__shifts || [])
+              .sort((a, b) => b.v - a.v)
+              .slice(0, 3),
             renderBlocking: performance
               .getEntriesByType("resource")
               .filter((e) => e.renderBlockingStatus === "blocking").length,
@@ -155,7 +166,7 @@ for (const url of urls)
           documentStatuses: statuses,
           domNodes: m.domNodes,
           pageTransferKB: m.pageTransferKB,
-        shifts: m.shifts,
+          shifts: m.shifts,
           pageRequests: m.pageRequests,
           renderBlocking: m.renderBlocking,
         });

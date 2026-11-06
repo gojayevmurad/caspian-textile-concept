@@ -11,6 +11,13 @@ export async function sendAuthEmail(
   kind: "verification" | "reset",
 ) {
   const env = getEnv();
+  if (env.EMAIL_MODE === "disabled") {
+    logger.warn(
+      { kind },
+      "Auth email requested but EMAIL_MODE=disabled; ask an operator to rotate the password",
+    );
+    return;
+  }
   if (env.EMAIL_MODE === "preview") {
     await db()
       .insert(emailPreview)

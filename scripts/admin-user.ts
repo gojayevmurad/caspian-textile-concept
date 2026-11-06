@@ -15,6 +15,8 @@ const { values } = parseArgs({
     role: { type: "string", default: "admin" },
     demo: { type: "boolean", default: false },
     "rotate-password": { type: "boolean", default: false },
+    // Emit SQL instead of connecting (for databases without a host port, e.g. production via `docker exec psql`).
+    sql: { type: "boolean", default: false },
   },
 });
 
@@ -39,6 +41,22 @@ const bytes = randomBytes(20);
 const password = Array.from(bytes, (b) => alphabet[b % alphabet.length])
   .join("")
   .replace(/(.{5})(?=.)/g, "$1-");
+
+if (values.sql) {
+  const id = randomUUID();
+  const hash = await hashPassword(password);
+  const q = (v: string) => `'${v.replace(/'/g, "''")}'`;
+  console.log(`begin;
+insert into "user" (id, name, email, email_verified, role) values (${q(id)}, ${q(name)}, ${q(email)}, true, ${q(role)})
+  on conflict (email) do update set role = excluded.role, name = excluded.name, email_verified = true;
+delete from account where provider_id = 'credential' and user_id = (select id from "user" where email = ${q(email)});
+insert into account (id, account_id, provider_id, user_id, password)
+  select ${q(randomUUID())}, u.id, 'credential', u.id, ${q(hash)} from "user" u where u.email = ${q(email)};
+delete from session where user_id = (select id from "user" where email = ${q(email)});
+commit;`);
+  console.error(`${role} ${email} — password (shown once): ${password}`);
+  process.exit(0);
+}
 
 const { db, pool, schema } = scriptDb();
 try {

@@ -37,3 +37,6 @@ Prices are formatted without `Intl` in components that render on both server and
 
 ## 12. Cache keys include the database identity
 `unstable_cache` keys contain a hash of `DATABASE_URL`, so dev/test/prod data in `.next/cache` can never be mixed (found by E2E against the isolated test database).
+
+## 13. `EMAIL_MODE=disabled` for this deployment
+The template requires outgoing email in production because public sign-up depends on verification mails. Here sign-up is disabled and all accounts are created by an operator, so the only auth mail would be a password reset. Rather than borrowing another project's mail credentials, production runs with `EMAIL_MODE=disabled`: nothing is sent and no reset links are stored; operators use `pnpm admin:user --rotate-password` (which also revokes sessions). `preview` stays forbidden in production. Switch to `send` with a verified Resend domain to enable resets and RFQ notifications.

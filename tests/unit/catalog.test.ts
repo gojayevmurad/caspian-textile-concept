@@ -95,3 +95,28 @@ describe("upload validation", () => {
     expect(sniffImageType(Buffer.from("GIF89a......"))).toBeNull();
   });
 });
+
+describe("production email modes", async () => {
+  const { envSchema } = await import("@/src/config/env");
+  const base = {
+    NODE_ENV: "production",
+    DATABASE_URL: "postgres://x",
+    APP_URL: "https://caspian.example",
+    BETTER_AUTH_SECRET: "x".repeat(40),
+  };
+  it("allows send and disabled, rejects preview", () => {
+    expect(
+      envSchema.safeParse({ ...base, EMAIL_MODE: "disabled" }).success,
+    ).toBe(true);
+    expect(
+      envSchema.safeParse({
+        ...base,
+        EMAIL_MODE: "send",
+        RESEND_API_KEY: "re_x",
+      }).success,
+    ).toBe(true);
+    expect(
+      envSchema.safeParse({ ...base, EMAIL_MODE: "preview" }).success,
+    ).toBe(false);
+  });
+});

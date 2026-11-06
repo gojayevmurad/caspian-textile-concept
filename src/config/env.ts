@@ -23,7 +23,9 @@ export const envSchema = z
     POLAR_PRO_BENEFIT_ID: optional,
     RESEND_API_KEY: optional,
     EMAIL_FROM: z.string().default("Starter <onboarding@resend.dev>"),
-    EMAIL_MODE: z.enum(["preview", "send"]).default("preview"),
+    // "disabled": no outgoing auth email at all (public sign-up is off; operators rotate passwords via
+    // `pnpm admin:user --rotate-password`). Never stores reset links, so it is allowed in production.
+    EMAIL_MODE: z.enum(["preview", "send", "disabled"]).default("preview"),
     LOG_LEVEL: z
       .enum(["debug", "info", "warn", "error", "silent"])
       .default("info"),
@@ -54,8 +56,10 @@ export const envSchema = z
         issue("Set a random BETTER_AUTH_SECRET of at least 32 characters");
       if (!v.APP_URL.startsWith("https://"))
         issue("Production APP_URL must use HTTPS");
-      if (v.EMAIL_MODE !== "send")
-        issue("Production authentication requires EMAIL_MODE=send");
+      if (v.EMAIL_MODE === "preview")
+        issue(
+          "Production authentication requires EMAIL_MODE=send (or disabled)",
+        );
     }
     if (v.EMAIL_MODE === "send" && !v.RESEND_API_KEY)
       issue("RESEND_API_KEY is required to send email");
