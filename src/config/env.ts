@@ -29,6 +29,14 @@ export const envSchema = z
       .default("info"),
     SENTRY_DSN: optional,
     SENTRY_RELEASE: optional,
+    // Caspian concept
+    SITE_INDEXABLE: z.enum(["true", "false"]).default("false"),
+    MEDIA_DIR: optional,
+    NOTIFY_EMAIL: optional,
+    CLOUDFLARE_ZONE_ID: optional,
+    CLOUDFLARE_API_TOKEN: optional,
+    ANTHROPIC_API_KEY: optional,
+    ANTHROPIC_MODEL: z.string().default("claude-sonnet-5-5"),
   })
   .superRefine((v, ctx) => {
     const issue = (message: string) =>

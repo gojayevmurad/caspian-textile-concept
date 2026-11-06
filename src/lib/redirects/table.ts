@@ -136,11 +136,7 @@ export async function resolveLegacy(
   if (shop) {
     const locale = (shop[1] as Locale | undefined) ?? "en";
     const target =
-      shop[2] === "cart" || shop[2] === "checkout"
-        ? "quote"
-        : shop[2] === "compare"
-          ? "compare"
-          : "catalog";
+      shop[2] === "cart" || shop[2] === "checkout" ? "quote" : "catalog";
     return { to: localePath(locale, target), status: 301 };
   }
   if (

@@ -416,7 +416,7 @@ try {
     [/privacy|məxfilik|mexfilik|конфиденц/i, "privacy"],
     [/^shop|magaza|mağaza|магазин/i, "catalog"],
     [/cart|checkout|səbət|sebet|корзин|оформлен/i, "quote"],
-    [/compare|müqayis|muqayis|сравн/i, "compare"],
+    [/compare|müqayis|muqayis|сравн/i, "catalog"],
     [/wishlist|istək|istek|избран/i, "catalog"],
   ];
   for (const l of ["en", "az", "ru"] as const) {

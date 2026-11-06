@@ -33,7 +33,6 @@ export const routeSegments = {
   quote: { az: "sorgu", en: "quote", ru: "zapros" },
   sample: { az: "numune", en: "sample", ru: "obrazec" },
   search: { az: "axtaris", en: "search", ru: "poisk" },
-  compare: { az: "muqayise", en: "compare", ru: "sravnenie" },
   patterns: { az: "lekalolar", en: "patterns", ru: "lekala" },
   "case-study": { az: "case-study", en: "case-study", ru: "case-study" },
   privacy: { az: "mexfilik", en: "privacy", ru: "konfidencialnost" },
