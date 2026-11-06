@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-11-06T10:57:47.785Z",
+  "measuredAt": "2026-11-06T11:13:42.878Z",
   "results": [
     {
       "url": "http://localhost:12808/",
@@ -8,70 +8,109 @@
       "summary": {
         "interstitialMs": 2,
         "ttfbMs": 153,
-        "fcpMs": 734,
-        "lcpMs": 734,
-        "loadMs": 2516,
+        "fcpMs": 758,
+        "lcpMs": 758,
+        "loadMs": 2558,
         "cls": 0.012,
-        "transferKB": 441,
+        "transferKB": 453,
         "requests": 24,
-        "pageTransferKB": 435,
-        "pageRequests": 23,
+        "pageTransferKB": 436,
+        "pageRequests": 24,
         "renderBlocking": 1,
         "domNodes": 488
       },
       "detail": [
         {
-          "interstitialMs": 2,
-          "ttfbMs": 154,
-          "fcpMs": 1106,
-          "lcpMs": 1106,
-          "loadMs": 2524,
+          "interstitialMs": 4,
+          "ttfbMs": 156,
+          "fcpMs": 808,
+          "lcpMs": 808,
+          "loadMs": 2584,
           "cls": 0.012,
-          "transferKB": 441,
+          "transferKB": 453,
           "requests": 24,
           "documents": 1,
           "documentStatuses": [
             200
           ],
           "domNodes": 488,
-          "pageTransferKB": 435,
-          "pageRequests": 23,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 1,
-          "ttfbMs": 151,
-          "fcpMs": 733,
-          "lcpMs": 733,
-          "loadMs": 2511,
-          "cls": 0.012,
-          "transferKB": 441,
-          "requests": 24,
-          "documents": 1,
-          "documentStatuses": [
-            200
+          "pageTransferKB": 436,
+          "shifts": [
+            {
+              "v": 0.012,
+              "t": 1500,
+              "src": [
+                "DIV.grid grid-cols-2 gap-3 sm:gap-4 y766→736",
+                "DL.mt-10 grid max-w-md grid-cols-3 gap-4 y646→616",
+                "DIV.rounded-3xl bg-white p-4 ring-1 ring-lin y790→760",
+                "DIV.mt-8 flex flex-wrap gap-3 y563→533",
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
           ],
-          "domNodes": 488,
-          "pageTransferKB": 435,
-          "pageRequests": 23,
+          "pageRequests": 24,
           "renderBlocking": 1
         },
         {
           "interstitialMs": 2,
           "ttfbMs": 153,
-          "fcpMs": 734,
-          "lcpMs": 734,
-          "loadMs": 2516,
+          "fcpMs": 758,
+          "lcpMs": 758,
+          "loadMs": 2558,
           "cls": 0.012,
-          "transferKB": 441,
+          "transferKB": 453,
           "requests": 24,
           "documents": 1,
           "documentStatuses": [
             200
           ],
           "domNodes": 488,
-          "pageTransferKB": 435,
-          "pageRequests": 23,
+          "pageTransferKB": 436,
+          "shifts": [
+            {
+              "v": 0.012,
+              "t": 1457,
+              "src": [
+                "DIV.grid grid-cols-2 gap-3 sm:gap-4 y766→736",
+                "DL.mt-10 grid max-w-md grid-cols-3 gap-4 y646→616",
+                "DIV.rounded-3xl bg-white p-4 ring-1 ring-lin y790→760",
+                "DIV.mt-8 flex flex-wrap gap-3 y563→533",
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 24,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 1,
+          "ttfbMs": 152,
+          "fcpMs": 741,
+          "lcpMs": 741,
+          "loadMs": 2545,
+          "cls": 0.012,
+          "transferKB": 453,
+          "requests": 24,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 488,
+          "pageTransferKB": 436,
+          "shifts": [
+            {
+              "v": 0.012,
+              "t": 1467,
+              "src": [
+                "DIV.grid grid-cols-2 gap-3 sm:gap-4 y766→736",
+                "DL.mt-10 grid max-w-md grid-cols-3 gap-4 y646→616",
+                "DIV.rounded-3xl bg-white p-4 ring-1 ring-lin y790→760",
+                "DIV.mt-8 flex flex-wrap gap-3 y563→533",
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 24,
           "renderBlocking": 1
         }
       ]
@@ -81,16 +120,16 @@
       "profile": "desktop-cable",
       "runs": 3,
       "summary": {
-        "interstitialMs": 1,
-        "ttfbMs": 5,
-        "fcpMs": 41,
-        "lcpMs": 70,
-        "loadMs": 61,
+        "interstitialMs": 2,
+        "ttfbMs": 6,
+        "fcpMs": 70,
+        "lcpMs": 86,
+        "loadMs": 82,
         "cls": 0,
-        "transferKB": 447,
+        "transferKB": 463,
         "requests": 32,
-        "pageTransferKB": 439,
-        "pageRequests": 31,
+        "pageTransferKB": 440,
+        "pageRequests": 32,
         "renderBlocking": 1,
         "domNodes": 488
       },
@@ -98,355 +137,453 @@
         {
           "interstitialMs": 1,
           "ttfbMs": 6,
-          "fcpMs": 157,
-          "lcpMs": 165,
-          "loadMs": 69,
+          "fcpMs": 65,
+          "lcpMs": 81,
+          "loadMs": 74,
           "cls": 0,
-          "transferKB": 447,
+          "transferKB": 463,
           "requests": 32,
           "documents": 1,
           "documentStatuses": [
             200
           ],
           "domNodes": 488,
-          "pageTransferKB": 439,
-          "pageRequests": 31,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 1,
-          "ttfbMs": 5,
-          "fcpMs": 41,
-          "lcpMs": 69,
-          "loadMs": 60,
-          "cls": 0,
-          "transferKB": 447,
-          "requests": 32,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 488,
-          "pageTransferKB": 439,
-          "pageRequests": 31,
+          "pageTransferKB": 440,
+          "shifts": [],
+          "pageRequests": 32,
           "renderBlocking": 1
         },
         {
           "interstitialMs": 2,
-          "ttfbMs": 5,
-          "fcpMs": 38,
-          "lcpMs": 70,
-          "loadMs": 61,
-          "cls": 0,
-          "transferKB": 447,
-          "requests": 32,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 488,
-          "pageTransferKB": 439,
-          "pageRequests": 31,
-          "renderBlocking": 1
-        }
-      ]
-    },
-    {
-      "url": "http://localhost:12808/kataloq",
-      "profile": "mobile-slow4g",
-      "runs": 3,
-      "summary": {
-        "interstitialMs": 2,
-        "ttfbMs": 152,
-        "fcpMs": 737,
-        "lcpMs": 2974,
-        "loadMs": 2477,
-        "cls": 0.507,
-        "transferKB": 623,
-        "requests": 36,
-        "pageTransferKB": 613,
-        "pageRequests": 35,
-        "renderBlocking": 1,
-        "domNodes": 828
-      },
-      "detail": [
-        {
-          "interstitialMs": 1,
-          "ttfbMs": 152,
-          "fcpMs": 737,
-          "lcpMs": 3029,
-          "loadMs": 2477,
-          "cls": 0.507,
-          "transferKB": 623,
-          "requests": 36,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 828,
-          "pageTransferKB": 613,
-          "pageRequests": 35,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 2,
-          "ttfbMs": 152,
-          "fcpMs": 746,
-          "lcpMs": 2958,
-          "loadMs": 2480,
-          "cls": 0.507,
-          "transferKB": 623,
-          "requests": 36,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 828,
-          "pageTransferKB": 613,
-          "pageRequests": 35,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 2,
-          "ttfbMs": 152,
-          "fcpMs": 730,
-          "lcpMs": 2974,
-          "loadMs": 2471,
-          "cls": 0.507,
-          "transferKB": 623,
-          "requests": 36,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 828,
-          "pageTransferKB": 613,
-          "pageRequests": 35,
-          "renderBlocking": 1
-        }
-      ]
-    },
-    {
-      "url": "http://localhost:12808/kataloq",
-      "profile": "desktop-cable",
-      "runs": 3,
-      "summary": {
-        "interstitialMs": 1,
-        "ttfbMs": 7,
-        "fcpMs": 37,
-        "lcpMs": 113,
-        "loadMs": 62,
-        "cls": 0.387,
-        "transferKB": 658,
-        "requests": 56,
-        "pageTransferKB": 642,
-        "pageRequests": 55,
-        "renderBlocking": 1,
-        "domNodes": 828
-      },
-      "detail": [
-        {
-          "interstitialMs": 1,
-          "ttfbMs": 5,
-          "fcpMs": 37,
-          "lcpMs": 217,
-          "loadMs": 52,
-          "cls": 0.387,
-          "transferKB": 658,
-          "requests": 56,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 828,
-          "pageTransferKB": 642,
-          "pageRequests": 55,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 1,
           "ttfbMs": 7,
-          "fcpMs": 37,
-          "lcpMs": 113,
-          "loadMs": 62,
-          "cls": 0.387,
-          "transferKB": 658,
-          "requests": 56,
+          "fcpMs": 74,
+          "lcpMs": 122,
+          "loadMs": 97,
+          "cls": 0,
+          "transferKB": 463,
+          "requests": 32,
           "documents": 1,
           "documentStatuses": [
             200
           ],
-          "domNodes": 828,
-          "pageTransferKB": 642,
-          "pageRequests": 55,
+          "domNodes": 488,
+          "pageTransferKB": 440,
+          "shifts": [],
+          "pageRequests": 32,
           "renderBlocking": 1
         },
         {
           "interstitialMs": 2,
-          "ttfbMs": 9,
-          "fcpMs": 42,
-          "lcpMs": 106,
-          "loadMs": 62,
-          "cls": 0.387,
-          "transferKB": 658,
-          "requests": 56,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 828,
-          "pageTransferKB": 642,
-          "pageRequests": 55,
-          "renderBlocking": 1
-        }
-      ]
-    },
-    {
-      "url": "http://localhost:12808/mehsul/deepblue-istileshdirilmish-ish-kostyumu",
-      "profile": "mobile-slow4g",
-      "runs": 3,
-      "summary": {
-        "interstitialMs": 2,
-        "ttfbMs": 152,
-        "fcpMs": 702,
-        "lcpMs": 702,
-        "loadMs": 2437,
-        "cls": 0,
-        "transferKB": 424,
-        "requests": 27,
-        "pageTransferKB": 417,
-        "pageRequests": 26,
-        "renderBlocking": 1,
-        "domNodes": 356
-      },
-      "detail": [
-        {
-          "interstitialMs": 1,
-          "ttfbMs": 152,
-          "fcpMs": 713,
-          "lcpMs": 713,
-          "loadMs": 2437,
-          "cls": 0,
-          "transferKB": 424,
-          "requests": 27,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 356,
-          "pageTransferKB": 417,
-          "pageRequests": 26,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 2,
-          "ttfbMs": 152,
-          "fcpMs": 698,
-          "lcpMs": 698,
-          "loadMs": 2433,
-          "cls": 0,
-          "transferKB": 424,
-          "requests": 27,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 356,
-          "pageTransferKB": 417,
-          "pageRequests": 26,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 2,
-          "ttfbMs": 152,
-          "fcpMs": 702,
-          "lcpMs": 702,
-          "loadMs": 2437,
-          "cls": 0,
-          "transferKB": 424,
-          "requests": 27,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 356,
-          "pageTransferKB": 417,
-          "pageRequests": 26,
-          "renderBlocking": 1
-        }
-      ]
-    },
-    {
-      "url": "http://localhost:12808/mehsul/deepblue-istileshdirilmish-ish-kostyumu",
-      "profile": "desktop-cable",
-      "runs": 3,
-      "summary": {
-        "interstitialMs": 1,
-        "ttfbMs": 6,
-        "fcpMs": 69,
-        "lcpMs": 69,
-        "loadMs": 62,
-        "cls": 0,
-        "transferKB": 453,
-        "requests": 37,
-        "pageTransferKB": 442,
-        "pageRequests": 36,
-        "renderBlocking": 1,
-        "domNodes": 356
-      },
-      "detail": [
-        {
-          "interstitialMs": 1,
           "ttfbMs": 6,
-          "fcpMs": 69,
-          "lcpMs": 69,
-          "loadMs": 62,
-          "cls": 0,
-          "transferKB": 453,
-          "requests": 37,
-          "documents": 1,
-          "documentStatuses": [
-            200
-          ],
-          "domNodes": 356,
-          "pageTransferKB": 442,
-          "pageRequests": 36,
-          "renderBlocking": 1
-        },
-        {
-          "interstitialMs": 1,
-          "ttfbMs": 6,
-          "fcpMs": 69,
-          "lcpMs": 69,
+          "fcpMs": 70,
+          "lcpMs": 86,
           "loadMs": 82,
           "cls": 0,
-          "transferKB": 453,
+          "transferKB": 463,
+          "requests": 32,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 488,
+          "pageTransferKB": 440,
+          "shifts": [],
+          "pageRequests": 32,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:12808/kataloq",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 153,
+        "fcpMs": 766,
+        "lcpMs": 998,
+        "loadMs": 3403,
+        "cls": 0,
+        "transferKB": 648,
+        "requests": 37,
+        "pageTransferKB": 622,
+        "pageRequests": 37,
+        "renderBlocking": 1,
+        "domNodes": 823
+      },
+      "detail": [
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 153,
+          "fcpMs": 770,
+          "lcpMs": 998,
+          "loadMs": 3403,
+          "cls": 0,
+          "transferKB": 648,
           "requests": 37,
           "documents": 1,
           "documentStatuses": [
             200
           ],
-          "domNodes": 356,
-          "pageTransferKB": 442,
-          "pageRequests": 36,
+          "domNodes": 823,
+          "pageTransferKB": 622,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 1536,
+              "src": [
+                "LABEL.ml-auto flex items-center gap-2 text-sm y371→371",
+                "NAV.flex items-center rounded-full border bo y132→132",
+                "P.text-sm text-muted y327→327"
+              ]
+            }
+          ],
+          "pageRequests": 37,
           "renderBlocking": 1
         },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 153,
+          "fcpMs": 766,
+          "lcpMs": 978,
+          "loadMs": 3403,
+          "cls": 0,
+          "transferKB": 648,
+          "requests": 37,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 823,
+          "pageTransferKB": 622,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 1542,
+              "src": [
+                "LABEL.ml-auto flex items-center gap-2 text-sm y371→371",
+                "NAV.flex items-center rounded-full border bo y132→132",
+                "P.text-sm text-muted y327→327"
+              ]
+            }
+          ],
+          "pageRequests": 37,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 152,
+          "fcpMs": 766,
+          "lcpMs": 1002,
+          "loadMs": 3401,
+          "cls": 0,
+          "transferKB": 648,
+          "requests": 37,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 823,
+          "pageTransferKB": 622,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 1535,
+              "src": [
+                "LABEL.ml-auto flex items-center gap-2 text-sm y371→371",
+                "NAV.flex items-center rounded-full border bo y132→132",
+                "P.text-sm text-muted y327→327"
+              ]
+            }
+          ],
+          "pageRequests": 37,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:12808/kataloq",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 7,
+        "fcpMs": 70,
+        "lcpMs": 74,
+        "loadMs": 103,
+        "cls": 0.001,
+        "transferKB": 692,
+        "requests": 57,
+        "pageTransferKB": 650,
+        "pageRequests": 57,
+        "renderBlocking": 1,
+        "domNodes": 823
+      },
+      "detail": [
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 7,
+          "fcpMs": 78,
+          "lcpMs": 106,
+          "loadMs": 67,
+          "cls": 0,
+          "transferKB": 692,
+          "requests": 57,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 823,
+          "pageTransferKB": 650,
+          "shifts": [],
+          "pageRequests": 57,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 7,
+          "fcpMs": 58,
+          "lcpMs": 74,
+          "loadMs": 103,
+          "cls": 0.003,
+          "transferKB": 692,
+          "requests": 57,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 823,
+          "pageTransferKB": 650,
+          "shifts": [
+            {
+              "v": 0.002,
+              "t": 45,
+              "src": [
+                "DIV.flex flex-1 flex-col gap-2 p-4 y474→515",
+                "DIV.flex flex-1 flex-col gap-2 p-4 y482→515",
+                "DIV.flex flex-1 flex-col gap-2 p-4 y500→515"
+              ]
+            },
+            {
+              "v": 0.001,
+              "t": 68,
+              "src": [
+                "DIV.flex flex-1 flex-col gap-2 p-4 y822→877",
+                "DIV.flex flex-1 flex-col gap-2 p-4 y845→877",
+                "DIV.flex flex-1 flex-col gap-2 p-4 y864→877"
+              ]
+            }
+          ],
+          "pageRequests": 57,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 7,
+          "fcpMs": 70,
+          "lcpMs": 70,
+          "loadMs": 105,
+          "cls": 0.001,
+          "transferKB": 689,
+          "requests": 56,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 823,
+          "pageTransferKB": 648,
+          "shifts": [
+            {
+              "v": 0.001,
+              "t": 68,
+              "src": [
+                "DIV.flex flex-1 flex-col gap-2 p-4 y822→877",
+                "DIV.flex flex-1 flex-col gap-2 p-4 y845→877",
+                "DIV.flex flex-1 flex-col gap-2 p-4 y864→877"
+              ]
+            }
+          ],
+          "pageRequests": 56,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:12808/mehsul/deepblue-istileshdirilmish-ish-kostyumu",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 153,
+        "fcpMs": 722,
+        "lcpMs": 750,
+        "loadMs": 2479,
+        "cls": 0,
+        "transferKB": 437,
+        "requests": 27,
+        "pageTransferKB": 418,
+        "pageRequests": 27,
+        "renderBlocking": 1,
+        "domNodes": 355
+      },
+      "detail": [
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 153,
+          "fcpMs": 726,
+          "lcpMs": 750,
+          "loadMs": 2479,
+          "cls": 0,
+          "transferKB": 437,
+          "requests": 27,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 355,
+          "pageTransferKB": 418,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 1488,
+              "src": [
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 27,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 152,
+          "fcpMs": 722,
+          "lcpMs": 750,
+          "loadMs": 2483,
+          "cls": 0,
+          "transferKB": 437,
+          "requests": 27,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 355,
+          "pageTransferKB": 418,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 1490,
+              "src": [
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 27,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 153,
+          "fcpMs": 718,
+          "lcpMs": 742,
+          "loadMs": 2471,
+          "cls": 0,
+          "transferKB": 437,
+          "requests": 27,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 355,
+          "pageTransferKB": 418,
+          "shifts": [
+            {
+              "v": 0,
+              "t": 1502,
+              "src": [
+                "NAV.flex items-center rounded-full border bo y132→132"
+              ]
+            }
+          ],
+          "pageRequests": 27,
+          "renderBlocking": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:12808/mehsul/deepblue-istileshdirilmish-ish-kostyumu",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 2,
+        "ttfbMs": 5,
+        "fcpMs": 66,
+        "lcpMs": 66,
+        "loadMs": 70,
+        "cls": 0,
+        "transferKB": 471,
+        "requests": 37,
+        "pageTransferKB": 443,
+        "pageRequests": 37,
+        "renderBlocking": 1,
+        "domNodes": 355
+      },
+      "detail": [
         {
           "interstitialMs": 1,
           "ttfbMs": 4,
-          "fcpMs": 37,
-          "lcpMs": 37,
-          "loadMs": 57,
+          "fcpMs": 53,
+          "lcpMs": 53,
+          "loadMs": 61,
           "cls": 0,
-          "transferKB": 453,
+          "transferKB": 471,
           "requests": 37,
           "documents": 1,
           "documentStatuses": [
             200
           ],
-          "domNodes": 356,
-          "pageTransferKB": 442,
-          "pageRequests": 36,
+          "domNodes": 355,
+          "pageTransferKB": 443,
+          "shifts": [],
+          "pageRequests": 37,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 5,
+          "fcpMs": 66,
+          "lcpMs": 66,
+          "loadMs": 72,
+          "cls": 0,
+          "transferKB": 471,
+          "requests": 37,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 355,
+          "pageTransferKB": 443,
+          "shifts": [],
+          "pageRequests": 37,
+          "renderBlocking": 1
+        },
+        {
+          "interstitialMs": 2,
+          "ttfbMs": 6,
+          "fcpMs": 86,
+          "lcpMs": 86,
+          "loadMs": 70,
+          "cls": 0,
+          "transferKB": 471,
+          "requests": 37,
+          "documents": 1,
+          "documentStatuses": [
+            200
+          ],
+          "domNodes": 355,
+          "pageTransferKB": 443,
+          "shifts": [],
+          "pageRequests": 37,
           "renderBlocking": 1
         }
       ]

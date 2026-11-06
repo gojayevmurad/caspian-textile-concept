@@ -77,5 +77,11 @@
   "engines": {
     "node": ">=24 <25"
   },
-  "type": "module"
+  "type": "module",
+  "browserslist": [
+    "chrome >= 111",
+    "edge >= 111",
+    "firefox >= 111",
+    "safari >= 16.4"
+  ]
 }

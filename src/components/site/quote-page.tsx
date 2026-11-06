@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import type { Locale } from "@/src/lib/i18n/config";
 import { localePath } from "@/src/lib/i18n/config";
 import { getDictionary } from "@/src/lib/i18n";
@@ -25,15 +24,13 @@ export function QuotePage({
         {kind === "quote" ? t.quote.lead : t.quote.sampleLead}
       </p>
       <div className="mt-8">
-        <Suspense>
-          <QuoteForm
-            locale={locale}
-            labels={t.quote}
-            colorLabels={colorLabels}
-            catalogHref={localePath(locale, "catalog")}
-            kind={kind}
-          />
-        </Suspense>
+        <QuoteForm
+          locale={locale}
+          labels={t.quote}
+          colorLabels={colorLabels}
+          catalogHref={localePath(locale, "catalog")}
+          kind={kind}
+        />
       </div>
     </div>
   );

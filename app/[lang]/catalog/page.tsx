@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import {
   isLocale,
@@ -57,15 +56,13 @@ export default async function CatalogPage({
         </h1>
         <p className="mt-2 text-muted">{t.catalog.lead}</p>
       </header>
-      <Suspense>
-        <CatalogBrowser
-          products={products}
-          categories={categories}
-          locale={lang}
-          labels={labels}
-          card={cardLabels(t)}
-        />
-      </Suspense>
+      <CatalogBrowser
+        products={products}
+        categories={categories}
+        locale={lang}
+        labels={labels}
+        card={cardLabels(t)}
+      />
     </div>
   );
 }

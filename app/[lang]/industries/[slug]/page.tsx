@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { isLocale, localePath, type Locale } from "@/src/lib/i18n/config";
 import { getDictionary } from "@/src/lib/i18n";
@@ -91,16 +90,14 @@ export default async function IndustryPage({ params }: Props) {
           )}
         </div>
       </header>
-      <Suspense>
-        <CatalogBrowser
-          products={scoped}
-          categories={categories}
-          locale={lang}
-          labels={{ ...t.catalog, close: t.nav.close }}
-          card={cardLabels(t)}
-          fixed={{ facet: "industry", value: industry.key }}
-        />
-      </Suspense>
+      <CatalogBrowser
+        products={scoped}
+        categories={categories}
+        locale={lang}
+        labels={{ ...t.catalog, close: t.nav.close }}
+        card={cardLabels(t)}
+        fixed={{ facet: "industry", value: industry.key }}
+      />
     </div>
   );
 }

@@ -16,19 +16,10 @@ export function format(
   return template.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ""));
 }
 
-const numberLocales: Record<Locale, string> = {
-  az: "az-AZ",
-  en: "en-GB",
-  ru: "ru-RU",
-};
-export function formatPrice(locale: Locale, amount: number, currency = "AZN") {
-  try {
-    return new Intl.NumberFormat(numberLocales[locale], {
-      style: "currency",
-      currency,
-      maximumFractionDigits: 0,
-    }).format(amount);
-  } catch {
-    return `${amount} ${currency}`;
-  }
+/** Deterministic (no Intl): identical output on server and client, so no hydration mismatch. */
+export function formatPrice(_locale: Locale, amount: number, currency = "AZN") {
+  const n = Math.round(amount)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return currency === "AZN" ? `${n} ₼` : `${n} ${currency}`;
 }

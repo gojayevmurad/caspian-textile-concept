@@ -241,6 +241,7 @@ export function CatalogBrowser({
                   locale={locale}
                   labels={card}
                   priority={i < 4}
+                  headingLevel={2}
                 />
               </li>
             ))}

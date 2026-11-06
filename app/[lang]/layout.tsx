@@ -10,10 +10,17 @@ import { DemoBanner } from "@/src/components/site/demo-banner";
 import { siteUrl, indexable } from "@/src/lib/seo/metadata";
 import { ServiceWorker } from "@/src/components/site/service-worker";
 
+// Latin + latin-ext (Azerbaijani) are preloaded; Cyrillic loads only where used (unicode-range), i.e. on /ru.
 const inter = Inter({
-  subsets: ["latin", "latin-ext", "cyrillic"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
   display: "swap",
+});
+const interCyrillic = Inter({
+  subsets: ["cyrillic"],
+  variable: "--font-inter-cyr",
+  display: "swap",
+  preload: false,
 });
 
 export const revalidate = 3600;
@@ -60,7 +67,10 @@ export default async function SiteLayout({
   if (!isLocale(lang)) notFound();
   const t = getDictionary(lang);
   return (
-    <html lang={htmlLang[lang]} className={inter.variable}>
+    <html
+      lang={htmlLang[lang]}
+      className={`${inter.variable} ${interCyrillic.variable}`}
+    >
       <body className="font-sans">
         <a
           href="#main"

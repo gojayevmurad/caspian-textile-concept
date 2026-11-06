@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import {
   isLocale,
@@ -39,13 +38,11 @@ export default async function SearchPage({
   return (
     <div className="container-x max-w-3xl py-10">
       <h1 className="mb-6 text-3xl font-bold">{t.search.title}</h1>
-      <Suspense>
-        <SearchBox
-          locale={lang}
-          productBase={localePath(lang, "product")}
-          labels={t.search}
-        />
-      </Suspense>
+      <SearchBox
+        locale={lang}
+        productBase={localePath(lang, "product")}
+        labels={t.search}
+      />
     </div>
   );
 }
