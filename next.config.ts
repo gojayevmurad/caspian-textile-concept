@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/spec/**": ["./src/assets/fonts/**", "./public/brand/logo.png"],
     "/**/opengraph-image": ["./public/brand/logo.png"],
+    "/[lang]/case-study": ["./data/benchmarks/**"],
   },
   turbopack: {
     rules: { "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" } },
@@ -27,6 +28,25 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
+          // Source-restricting CSP without nonces: nonces would force every page to render
+          // dynamically and defeat ISR + Cloudflare edge caching (see DECISIONS.md).
+          {
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline'",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: blob:",
+              "font-src 'self'",
+              "connect-src 'self' https://*.posthog.com https://*.i.posthog.com https://*.ingest.sentry.io https://*.ingest.de.sentry.io",
+              "frame-ancestors 'none'",
+              "form-action 'self' https://*.polar.sh",
+              "base-uri 'self'",
+              "object-src 'none'",
+              "upgrade-insecure-requests",
+            ].join("; "),
+          },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
         ],
       },
     ];

@@ -17,3 +17,9 @@ deploy/runtime.env
 deploy/.validated-image
 deploy/.previous-image
 deploy/.deploy.lock
+
+# local-only data
+caspian-research
+storage
+.dev-credentials
+.claude

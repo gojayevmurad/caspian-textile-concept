@@ -1,0 +1,473 @@
+{
+  "measuredAt": "2026-11-06T09:06:53.552Z",
+  "results": [
+    {
+      "url": "https://caspiantextile.com/",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 762,
+        "ttfbMs": 1861,
+        "fcpMs": 7038,
+        "lcpMs": 31089,
+        "loadMs": 31557,
+        "cls": 0,
+        "transferKB": 6488,
+        "requests": 125,
+        "pageTransferKB": 6320,
+        "pageRequests": 123,
+        "renderBlocking": 18,
+        "domNodes": 2139
+      },
+      "detail": [
+        {
+          "interstitialMs": 781,
+          "ttfbMs": 1911,
+          "fcpMs": 7605,
+          "lcpMs": 34373,
+          "loadMs": 34360,
+          "cls": 0.014,
+          "transferKB": 7288,
+          "requests": 127,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 2129,
+          "pageTransferKB": 7121,
+          "pageRequests": 125,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 689,
+          "ttfbMs": 1794,
+          "fcpMs": 6957,
+          "lcpMs": 31089,
+          "loadMs": 31557,
+          "cls": 0,
+          "transferKB": 6488,
+          "requests": 125,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 2149,
+          "pageTransferKB": 6320,
+          "pageRequests": 123,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 762,
+          "ttfbMs": 1861,
+          "fcpMs": 7038,
+          "lcpMs": 29338,
+          "loadMs": 29367,
+          "cls": 0,
+          "transferKB": 6010,
+          "requests": 125,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 2139,
+          "pageTransferKB": 5843,
+          "pageRequests": 123,
+          "renderBlocking": 18
+        }
+      ]
+    },
+    {
+      "url": "https://caspiantextile.com/",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 667,
+        "ttfbMs": 1789,
+        "fcpMs": 6909,
+        "lcpMs": 7549,
+        "loadMs": 7971,
+        "cls": 0.001,
+        "transferKB": 11008,
+        "requests": 136,
+        "pageTransferKB": 10827,
+        "pageRequests": 133,
+        "renderBlocking": 18,
+        "domNodes": 2113
+      },
+      "detail": [
+        {
+          "interstitialMs": 665,
+          "ttfbMs": 1789,
+          "fcpMs": 6909,
+          "lcpMs": 7549,
+          "loadMs": 7971,
+          "cls": 0.001,
+          "transferKB": 11008,
+          "requests": 136,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 2113,
+          "pageTransferKB": 10827,
+          "pageRequests": 133,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 672,
+          "ttfbMs": 1866,
+          "fcpMs": 6980,
+          "lcpMs": 7624,
+          "loadMs": 8053,
+          "cls": 0.001,
+          "transferKB": 11964,
+          "requests": 140,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 2129,
+          "pageTransferKB": 11783,
+          "pageRequests": 137,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 667,
+          "ttfbMs": 1755,
+          "fcpMs": 6867,
+          "lcpMs": 7519,
+          "loadMs": 7737,
+          "cls": 0.001,
+          "transferKB": 10023,
+          "requests": 136,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 2090,
+          "pageTransferKB": 9842,
+          "pageRequests": 133,
+          "renderBlocking": 18
+        }
+      ]
+    },
+    {
+      "url": "https://caspiantextile.com/shop/",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 669,
+        "ttfbMs": 2068,
+        "fcpMs": 7220,
+        "lcpMs": 7220,
+        "loadMs": 8574,
+        "cls": 0,
+        "transferKB": 254,
+        "requests": 111,
+        "pageTransferKB": 124,
+        "pageRequests": 110,
+        "renderBlocking": 18,
+        "domNodes": 1708
+      },
+      "detail": [
+        {
+          "interstitialMs": 669,
+          "ttfbMs": 2668,
+          "fcpMs": 7821,
+          "lcpMs": 7821,
+          "loadMs": 9167,
+          "cls": 0,
+          "transferKB": 254,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1708,
+          "pageTransferKB": 124,
+          "pageRequests": 110,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 676,
+          "ttfbMs": 2068,
+          "fcpMs": 7220,
+          "lcpMs": 7220,
+          "loadMs": 8574,
+          "cls": 0,
+          "transferKB": 254,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1708,
+          "pageTransferKB": 124,
+          "pageRequests": 110,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 665,
+          "ttfbMs": 2009,
+          "fcpMs": 7169,
+          "lcpMs": 7169,
+          "loadMs": 8508,
+          "cls": 0,
+          "transferKB": 254,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1708,
+          "pageTransferKB": 124,
+          "pageRequests": 110,
+          "renderBlocking": 18
+        }
+      ]
+    },
+    {
+      "url": "https://caspiantextile.com/shop/",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 660,
+        "ttfbMs": 1987,
+        "fcpMs": 7048,
+        "lcpMs": 7048,
+        "loadMs": 7873,
+        "cls": 0,
+        "transferKB": 254,
+        "requests": 111,
+        "pageTransferKB": 124,
+        "pageRequests": 110,
+        "renderBlocking": 18,
+        "domNodes": 1708
+      },
+      "detail": [
+        {
+          "interstitialMs": 660,
+          "ttfbMs": 1944,
+          "fcpMs": 7000,
+          "lcpMs": 7000,
+          "loadMs": 7801,
+          "cls": 0,
+          "transferKB": 254,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1708,
+          "pageTransferKB": 124,
+          "pageRequests": 110,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 660,
+          "ttfbMs": 2000,
+          "fcpMs": 7076,
+          "lcpMs": 7076,
+          "loadMs": 7879,
+          "cls": 0,
+          "transferKB": 254,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1708,
+          "pageTransferKB": 124,
+          "pageRequests": 110,
+          "renderBlocking": 18
+        },
+        {
+          "interstitialMs": 668,
+          "ttfbMs": 1987,
+          "fcpMs": 7048,
+          "lcpMs": 7048,
+          "loadMs": 7873,
+          "cls": 0,
+          "transferKB": 254,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1708,
+          "pageTransferKB": 124,
+          "pageRequests": 110,
+          "renderBlocking": 18
+        }
+      ]
+    },
+    {
+      "url": "https://caspiantextile.com/product/deepblue-workwear-suit/",
+      "profile": "mobile-slow4g",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 679,
+        "ttfbMs": 2052,
+        "fcpMs": 7191,
+        "lcpMs": 7659,
+        "loadMs": 8753,
+        "cls": 0.665,
+        "transferKB": 280,
+        "requests": 111,
+        "pageTransferKB": 117,
+        "pageRequests": 109,
+        "renderBlocking": 17,
+        "domNodes": 1256
+      },
+      "detail": [
+        {
+          "interstitialMs": 679,
+          "ttfbMs": 2096,
+          "fcpMs": 7239,
+          "lcpMs": 7659,
+          "loadMs": 8763,
+          "cls": 0.816,
+          "transferKB": 280,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1260,
+          "pageTransferKB": 117,
+          "pageRequests": 109,
+          "renderBlocking": 17
+        },
+        {
+          "interstitialMs": 683,
+          "ttfbMs": 2052,
+          "fcpMs": 7191,
+          "lcpMs": 7659,
+          "loadMs": 8753,
+          "cls": 0.665,
+          "transferKB": 284,
+          "requests": 114,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1253,
+          "pageTransferKB": 123,
+          "pageRequests": 112,
+          "renderBlocking": 17
+        },
+        {
+          "interstitialMs": 672,
+          "ttfbMs": 2003,
+          "fcpMs": 7144,
+          "lcpMs": 7568,
+          "loadMs": 8678,
+          "cls": 0.665,
+          "transferKB": 278,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1256,
+          "pageTransferKB": 116,
+          "pageRequests": 109,
+          "renderBlocking": 17
+        }
+      ]
+    },
+    {
+      "url": "https://caspiantextile.com/product/deepblue-workwear-suit/",
+      "profile": "desktop-cable",
+      "runs": 3,
+      "summary": {
+        "interstitialMs": 661,
+        "ttfbMs": 2014,
+        "fcpMs": 7076,
+        "lcpMs": 7296,
+        "loadMs": 7898,
+        "cls": 1.03,
+        "transferKB": 278,
+        "requests": 111,
+        "pageTransferKB": 116,
+        "pageRequests": 109,
+        "renderBlocking": 17,
+        "domNodes": 1255
+      },
+      "detail": [
+        {
+          "interstitialMs": 657,
+          "ttfbMs": 2025,
+          "fcpMs": 7081,
+          "lcpMs": 7297,
+          "loadMs": 7939,
+          "cls": 1.077,
+          "transferKB": 278,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1254,
+          "pageTransferKB": 115,
+          "pageRequests": 109,
+          "renderBlocking": 17
+        },
+        {
+          "interstitialMs": 664,
+          "ttfbMs": 2014,
+          "fcpMs": 7076,
+          "lcpMs": 7296,
+          "loadMs": 7898,
+          "cls": 1.03,
+          "transferKB": 278,
+          "requests": 111,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1255,
+          "pageTransferKB": 116,
+          "pageRequests": 109,
+          "renderBlocking": 17
+        },
+        {
+          "interstitialMs": 661,
+          "ttfbMs": 1950,
+          "fcpMs": 7009,
+          "lcpMs": 7217,
+          "loadMs": 7826,
+          "cls": 1.03,
+          "transferKB": 286,
+          "requests": 114,
+          "documents": 2,
+          "documentStatuses": [
+            409,
+            200
+          ],
+          "domNodes": 1258,
+          "pageTransferKB": 125,
+          "pageRequests": 112,
+          "renderBlocking": 17
+        }
+      ]
+    }
+  ]
+}

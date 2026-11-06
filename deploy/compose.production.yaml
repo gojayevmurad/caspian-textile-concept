@@ -8,6 +8,9 @@ services:
     environment:
       HOSTNAME: 0.0.0.0
       PORT: 3000
+      MEDIA_DIR: /data/media
+    # Host directory (owned by uid 1001) so media can be synced with rsync and backed up.
+    volumes: ["${MEDIA_PATH:-./media}:/data/media"]
     networks:
       private:
       proxy:

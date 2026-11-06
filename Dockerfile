@@ -26,6 +26,9 @@ COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=build --chown=nextjs:nodejs /app/public ./public
 COPY --from=build --chown=nextjs:nodejs /app/drizzle ./drizzle
 COPY --from=build --chown=nextjs:nodejs /app/.migration-runner.cjs ./scripts/migrate.cjs
+# Processed media (AVIF/WebP variants) live on a persistent mount owned by the runtime user.
+RUN mkdir -p /data/media && chown -R nextjs:nodejs /data
+ENV MEDIA_DIR=/data/media
 USER nextjs
 EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=8s --start-period=30s --retries=3 CMD node -e "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
