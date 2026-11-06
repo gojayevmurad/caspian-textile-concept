@@ -6,7 +6,12 @@ import { z } from "zod";
 import { db } from "@/src/lib/db";
 import * as s from "@/src/lib/db/schema";
 import { mutate } from "@/src/lib/admin/mutation";
-import { locales, slugify, type Locale } from "@/src/lib/i18n/config";
+import {
+  foldForSearch,
+  locales,
+  slugify,
+  type Locale,
+} from "@/src/lib/i18n/config";
 import { colorNames } from "@/src/lib/catalog/taxonomy";
 import { htmlToText } from "@/src/lib/catalog/clean-html";
 import {
@@ -133,13 +138,13 @@ export async function saveProduct(formData: FormData) {
               seoTitle: t.seoTitle ?? null,
               seoDescription: t.seoDescription ?? null,
               status: t.status,
-              searchText: [
-                t.name,
-                t.shortDescription,
-                htmlToText(descriptionHtml).slice(0, 600),
-              ]
-                .join(" ")
-                .toLowerCase(),
+              searchText: foldForSearch(
+                [
+                  t.name,
+                  t.shortDescription,
+                  htmlToText(descriptionHtml).slice(0, 600),
+                ].join(" "),
+              ),
               updatedAt: new Date(),
             })
             .where(
@@ -210,7 +215,7 @@ export async function createProduct(formData: FormData) {
             slug: `${slugify(name)}-${slugify(sku)}`,
             status:
               l === "en" ? ("source" as const) : ("untranslated" as const),
-            searchText: `${name} ${sku}`.toLowerCase(),
+            searchText: foldForSearch(`${name} ${sku}`),
           })),
         );
       return { entityId: row.id, id: row.id, diff: { sku, name } };
@@ -423,7 +428,7 @@ export async function aiDraftTranslation(formData: FormData) {
           shortDescription: draft.summary,
           descriptionHtml: cleanHtml(draft.html),
           status: "ai_draft",
-          searchText: sql`lower(${draft.name} || ' ' || ${draft.summary})`,
+          searchText: foldForSearch(`${draft.name} ${draft.summary}`),
           updatedAt: new Date(),
         })
         .where(

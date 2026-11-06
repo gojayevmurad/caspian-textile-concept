@@ -14,6 +14,7 @@ import {
   firstSentences,
 } from "../src/lib/catalog/clean-html";
 import {
+  foldForSearch,
   locales,
   localePath,
   slugify,
@@ -273,16 +274,17 @@ try {
           slug = `${slug}-${slugify(p.sku)}`;
       }
       usedSlugs[l].add(slug);
-      const searchText = [
-        name,
-        p.sku,
-        brand,
-        shortDescription,
-        htmlToText(descriptionHtml).slice(0, 600),
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
+      const searchText = foldForSearch(
+        [
+          name,
+          p.sku,
+          brand,
+          shortDescription,
+          htmlToText(descriptionHtml).slice(0, 600),
+        ]
+          .filter(Boolean)
+          .join(" "),
+      );
       await db
         .insert(schema.productTranslation)
         .values({

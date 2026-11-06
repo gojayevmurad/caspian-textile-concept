@@ -152,3 +152,18 @@ export function slugify(input: string): string {
     .slice(0, 80)
     .replace(/-+$/g, "");
 }
+
+/** Search folding: lowercase, Azerbaijani letters → ASCII, diacritics removed (users often type without them). */
+export function foldForSearch(input: string): string {
+  return input
+    .toLowerCase()
+    .replace(/ə/g, "e")
+    .replace(/ı/g, "i")
+    .replace(/ğ/g, "g")
+    .replace(/ş/g, "s")
+    .replace(/ç/g, "c")
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}

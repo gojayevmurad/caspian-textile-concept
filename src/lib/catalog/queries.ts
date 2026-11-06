@@ -1,12 +1,18 @@
 import "server-only";
+import { createHash } from "node:crypto";
 import { unstable_cache } from "next/cache";
 import { and, asc, eq, inArray, sql } from "drizzle-orm";
 import { db } from "@/src/lib/db";
 import * as s from "@/src/lib/db/schema";
-import type { Locale } from "@/src/lib/i18n/config";
+import { foldForSearch, type Locale } from "@/src/lib/i18n/config";
 import type { MediaVariant } from "@/src/lib/media/process";
 
 export const CATALOG_TAG = "catalog";
+// Cache keys include the database identity so different databases (dev/test/prod) never share entries.
+const DB_KEY = createHash("sha1")
+  .update(process.env.DATABASE_URL ?? "none")
+  .digest("hex")
+  .slice(0, 8);
 const hasDb = () => Boolean(process.env.DATABASE_URL);
 
 export type MediaRef = {
@@ -95,7 +101,7 @@ export const getCategories = unstable_cache(
       seoDescription: t.seoDescription,
     }));
   },
-  ["categories-v1"],
+  ["categories-v1", DB_KEY],
   { tags: [CATALOG_TAG], revalidate: 3600 },
 );
 
@@ -158,7 +164,7 @@ export const getCatalog = unstable_cache(
       createdAt: p.createdAt.toISOString(),
     }));
   },
-  ["catalog-v1"],
+  ["catalog-v1", DB_KEY],
   { tags: [CATALOG_TAG], revalidate: 3600 },
 );
 
@@ -244,7 +250,7 @@ export const getProduct = unstable_cache(
       ).toISOString(),
     };
   },
-  ["product-v1"],
+  ["product-v1", DB_KEY],
   { tags: [CATALOG_TAG], revalidate: 3600 },
 );
 
@@ -275,13 +281,13 @@ export const getCategoryAlternates = unstable_cache(
       Record<Locale, string>
     >;
   },
-  ["category-alternates-v1"],
+  ["category-alternates-v1", DB_KEY],
   { tags: [CATALOG_TAG], revalidate: 3600 },
 );
 
 /** Typo-tolerant search over product names/SKU/description in one locale (pg_trgm). */
 export async function searchProducts(locale: Locale, q: string, limit = 12) {
-  const query = q.trim().toLowerCase().slice(0, 80);
+  const query = foldForSearch(q).slice(0, 80);
   if (!hasDb() || query.length < 2) return [];
   const rows = await db()
     .select({
