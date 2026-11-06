@@ -1,0 +1,12 @@
+{
+  "name": "Caspian Textile",
+  "slug": "caspian-textile",
+  "domain": "caspian.muradgojayev.com",
+  "repository": "gojayevmurad/caspian-textile-concept",
+  "description": "Konsept demo: Caspian Textile üçün iş geyimləri və forma kataloqu",
+  "color": "#2b2d4f",
+  "port": 12808,
+  "dbPort": 29808,
+  "testDbPort": 49808,
+  "deployPath": "/srv/saas/caspian-textile/deploy"
+}

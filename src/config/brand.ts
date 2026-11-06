@@ -1,5 +1,5 @@
 export const brand = {
-  name: "Launchpad",
-  description: "A considered foundation for your next idea.",
-  supportEmail: "support@example.com",
+  name: "Caspian Textile",
+  description: "Konsept demo: Caspian Textile üçün iş geyimləri və forma kataloqu",
+  supportEmail: "support@caspian.muradgojayev.com",
 };
