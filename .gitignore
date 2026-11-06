@@ -52,3 +52,8 @@ test-results/
 /deploy/.previous-image
 /deploy/.deploy.lock
 /deploy/runtime.env
+
+# processed media (content-hashed variants)
+/storage/
+# legacy research data: large and owned by Caspian Textile
+/caspian-research/data/

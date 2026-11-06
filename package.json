@@ -22,7 +22,10 @@
     "local:stop": "node scripts/local.mjs stop",
     "local:logs": "node scripts/local.mjs logs",
     "local:migrate": "node scripts/local.mjs migrate",
-    "local:test-db": "node scripts/local.mjs test-db"
+    "local:test-db": "node scripts/local.mjs test-db",
+    "admin:user": "tsx scripts/admin-user.ts",
+    "admin:create-demo": "tsx scripts/admin-user.ts --demo",
+    "import:legacy": "tsx scripts/import-legacy.ts"
   },
   "dependencies": {
     "@better-auth/drizzle-adapter": "1.7.8",
@@ -43,7 +46,9 @@
     "react-dom": "19.3.1",
     "react-email": "6.11.2",
     "resend": "6.33.0",
+    "sanitize-html": "2.17.0",
     "server-only": "0.0.1",
+    "sharp": "0.34.5",
     "tailwind-merge": "3.7.0",
     "zod": "4.6.7"
   },
@@ -54,12 +59,14 @@
     "@types/pg": "8.23.1",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
+    "@types/sanitize-html": "2.16.0",
     "drizzle-kit": "0.31.11",
     "esbuild": "0.28.2",
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.2",
     "prettier": "3.9.10",
     "tailwindcss": "4.3.3",
+    "tsx": "4.20.6",
     "typescript": "5.9.3",
     "vitest": "5.0.4"
   },

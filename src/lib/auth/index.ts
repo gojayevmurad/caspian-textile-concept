@@ -18,6 +18,8 @@ function createAuth() {
     trustedOrigins: [env.APP_URL],
     emailAndPassword: {
       enabled: true,
+      // Accounts are created by operators (pnpm admin:user / admin:create-demo); no public registration.
+      disableSignUp: true,
       requireEmailVerification: true,
       minPasswordLength: 12,
       sendResetPassword: async ({ user, url }) =>
@@ -31,6 +33,14 @@ function createAuth() {
         sendAuthEmail(user.email, url, "verification"),
     },
     user: {
+      additionalFields: {
+        role: {
+          type: "string",
+          required: false,
+          defaultValue: "customer",
+          input: false,
+        },
+      },
       deleteUser: {
         enabled: true,
         beforeDelete: async (user) => {

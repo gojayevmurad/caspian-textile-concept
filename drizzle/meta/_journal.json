@@ -15,6 +15,13 @@
       "when": 1792110856723,
       "tag": "0001_normal_spyke",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793959636931,
+      "tag": "0002_catalogue",
+      "breakpoints": true
     }
   ]
 }
