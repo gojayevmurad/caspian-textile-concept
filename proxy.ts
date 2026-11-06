@@ -34,6 +34,14 @@ export async function proxy(request: NextRequest) {
   if (FILE.test(pathname) && !pathname.startsWith("/product"))
     return NextResponse.next();
 
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    const legacy = await resolveLegacy(pathname);
+    if (legacy) return legacyResponse(request, legacy);
+    const url = new URL(request.url);
+    url.pathname = pathname.replace(/\/+$/, "");
+    return withRobots(NextResponse.redirect(url, 308));
+  }
+
   const resolved = toInternalPath(pathname);
   if (resolved.canonicalRedirect !== undefined) {
     // /az/... (legacy WPML prefix or non-canonical default locale) → try legacy map first.

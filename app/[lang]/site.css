@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #2b2d4f;
+  --color-brand-800: #1f2140;
+  --color-brand-600: #3c3f6e;
+  --color-brand-100: #e3e5f1;
+  --color-brand-50: #f1f2f8;
+  /* hi-vis accent; -700 is the AA-contrast variant for text/buttons on white */
+  --color-hivis: #f26b1d;
+  --color-hivis-700: #b9470a;
+  --color-ink: #15171c;
+  --color-muted: #555b69;
+  --color-line: #e3e5ea;
+  --color-surface: #f5f6f8;
+  --font-sans:
+    var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  --radius-card: 14px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 96px;
+  }
+  body {
+    @apply bg-white text-ink antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-hivis);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+@utility btn {
+  @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60;
+}
+@utility btn-primary {
+  @apply btn bg-brand text-white hover:bg-brand-800;
+}
+@utility btn-accent {
+  @apply btn bg-hivis-700 text-white hover:bg-[#9c3b07];
+}
+@utility btn-ghost {
+  @apply btn border border-line bg-white text-ink hover:border-brand hover:text-brand;
+}
+@utility chip {
+  @apply inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1 text-xs font-medium text-muted;
+}
+@utility input {
+  @apply min-h-11 w-full rounded-xl border border-line bg-white px-3 text-sm text-ink placeholder:text-muted/70 focus:border-brand focus:outline-none;
+}
+@utility label {
+  @apply mb-1 block text-sm font-medium text-ink;
+}
+@layer components {
+  .prose-product h3 {
+    @apply mt-6 mb-2 text-base font-semibold text-ink;
+  }
+  .prose-product p {
+    @apply mb-3 leading-relaxed text-muted;
+  }
+  .prose-product ul {
+    @apply mb-3 list-disc space-y-1 pl-5 text-muted;
+  }
+}
+
+/* Cross-document & in-app view transitions (progressive enhancement) */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+}

@@ -7,7 +7,7 @@
     "build": "next build && pnpm build:migrations",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run tests/unit",
     "test:integration": "node --env-file-if-exists=.env.local node_modules/vitest/vitest.mjs run tests/integration",
     "test:e2e": "node scripts/local.mjs e2e",

@@ -1,0 +1,1182 @@
+{
+ "BD1-1-X01-232": {
+  "az": {
+   "name": "SafeCover birdəfəlik kombinezon",
+   "summary": "Gigiyenaya həssas tibbi, laboratoriya, təmizlik və sənaye mühitləri üçün bədəni tam örtən birdəfəlik qoruyucu kombinezon. Toz, yüngül sıçrantı və səth çirklənməsinə qarşı etibarlı maneə yaradır."
+  },
+  "ru": {
+   "name": "Одноразовый комбинезон SafeCover",
+   "summary": "Одноразовый защитный комбинезон для медицинских, лабораторных, клининговых и производственных помещений с повышенными требованиями к гигиене. Надёжный барьер от пыли, лёгких брызг и поверхностных загрязнений."
+  }
+ },
+ "ELCN-5-ISQD-296": {
+  "az": {
+   "name": "ProFlex LED baş fənəri",
+   "summary": "İş, açıq hava və texniki tapşırıqlar üçün əlləri sərbəst saxlayan, fokuslanmış işıq verən LED baş fənəri. Kompakt dizaynı zəif işıqlı mühitdə sabit istifadəni təmin edir."
+  },
+  "ru": {
+   "name": "Налобный фонарь ProFlex LED",
+   "summary": "Налобный LED-фонарь для работы, outdoor и технических задач, оставляющий руки свободными. Компактная конструкция обеспечивает стабильную фиксацию при слабом освещении."
+  }
+ },
+ "ELCN-5-ISQD-298": {
+  "az": {
+   "name": "PowerBeam LED əl fənəri",
+   "summary": "İş, açıq hava fəaliyyəti və fövqəladə hallar üçün etibarlı işıqlandırma verən portativ LED fənər. Daşıma tutacağı asan daşınma və sabit istifadəni təmin edir."
+  },
+  "ru": {
+   "name": "Ручной фонарь PowerBeam LED",
+   "summary": "Переносной LED-фонарь для работы, активного отдыха и аварийных ситуаций. Встроенная ручка обеспечивает удобную переноску и устойчивое использование."
+  }
+ },
+ "ELCN-5-ISQD-299": {
+  "az": {
+   "name": "NightForce LED fənər",
+   "summary": "Zəif işıqlı mühitdə iş, yoxlama və ümumi istifadə üçün etibarlı LED əl fənəri. Yüngül və kompakt olduğu üçün peşəkar və gündəlik istifadəyə uyğundur."
+  },
+  "ru": {
+   "name": "Фонарь NightForce LED",
+   "summary": "Ручной LED-фонарь для работы, осмотра и повседневных задач при слабом освещении. Лёгкий и компактный — подходит для профессионального и бытового использования."
+  }
+ },
+ "ELCN-5-ISQD-303": {
+  "az": {
+   "name": "TrailGuard LED baş fənəri",
+   "summary": "Zəif işıqda iş, açıq hava və texniki tapşırıqlar üçün əlləri sərbəst saxlayan LED baş fənəri. Davamlı işıq və hərəkət azadlığı tələb olunan vəziyyətlər üçün uyğundur."
+  },
+  "ru": {
+   "name": "Налобный фонарь TrailGuard LED",
+   "summary": "Налобный LED-фонарь для работы, outdoor и технических задач при слабом освещении. Подходит, когда нужны постоянный свет и свобода движений."
+  }
+ },
+ "ELCN-5-ISQD-310": {
+  "az": {
+   "name": "IronCore LED projektor fənəri",
+   "summary": "İş, yoxlama və fövqəladə hallar üçün güclü, istiqamətli işıq verən LED əl projektoru. Möhkəm gövdəsi və böyük reflektoru uzaq məsafəni işıqlandırmağa imkan verir."
+  },
+  "ru": {
+   "name": "Поисковый фонарь IronCore LED",
+   "summary": "Ручной LED-прожектор с мощным направленным светом для работы, осмотра и аварийных ситуаций. Прочный корпус и крупный отражатель обеспечивают дальний луч."
+  }
+ },
+ "ELCN-5-THCL-277": {
+  "az": {
+   "name": "VoiceMax meqafon",
+   "summary": "İctimai yerlərdə, iş və tədbirlərdə səsi aydın çatdırmaq üçün əl meqafonu. İzdihamın idarəsi, elanlar və təlimlər üçün uyğundur."
+  },
+  "ru": {
+   "name": "Мегафон VoiceMax",
+   "summary": "Ручной мегафон для чёткой передачи голоса на публичных площадках, объектах и мероприятиях. Подходит для управления толпой, объявлений и инструктажей."
+  }
+ },
+ "FMD-2-FRA-236": {
+  "az": {
+   "name": "SafeLine iş dəsti",
+   "summary": "Təhlükəsizlik, davamlılıq və vahid görünüş tələb olunan sənaye, enerji, texniki xidmət mühitləri üçün iki hissəli peşəkar iş dəsti (gödəkçə və şalvar)."
+  },
+  "ru": {
+   "name": "Рабочий комплект SafeLine",
+   "summary": "Профессиональный комплект из двух предметов (куртка и брюки) для промышленности, энергетики и техобслуживания, где важны безопасность, прочность и единый стиль."
+  }
+ },
+ "FMD-3-MT-234": {
+  "az": {
+   "name": "ProGuard iş dəsti",
+   "summary": "Sənaye, tikinti və texniki xidmət üçün davamlı, görünən və funksional iki hissəli iş dəsti. Gündəlik iş üçün etibarlı qoruma və müasir görünüş."
+  },
+  "ru": {
+   "name": "Рабочий комплект ProGuard",
+   "summary": "Прочный, заметный и функциональный комплект из двух предметов для промышленности, строительства и техобслуживания. Надёжная защита и современный вид."
+  }
+ },
+ "GDK-1-WD-237": {
+  "az": {
+   "name": "WindCore iş gödəkçəsi",
+   "summary": "Sənaye, logistika, texniki xidmət və açıq havada küləkdən və yüngül hava şəraitindən qoruyan yüngül iş gödəkçəsi. Gündəlik geyim üçün sadə və praktik dizayn."
+  },
+  "ru": {
+   "name": "Рабочая куртка WindCore",
+   "summary": "Лёгкая рабочая куртка для промышленности, логистики, техобслуживания и работы на улице, защищающая от ветра и непогоды. Практичный дизайн на каждый день."
+  }
+ },
+ "GDK-2-MT-347": {
+  "az": {
+   "name": "HakkaCore istiləşdirilmiş iş gödəkçəsi",
+   "summary": "Soyuq, küləkli və ağır açıq hava şəraitində işləyənlər üçün istiləşdirilmiş iş gödəkçəsi. Sənaye, tikinti və kommunal işlər üçün uyğundur."
+  },
+  "ru": {
+   "name": "Утеплённая рабочая куртка HakkaCore",
+   "summary": "Утеплённая куртка для работы на холоде, ветру и в сложных условиях. Подходит для промышленности, строительства и коммунальных служб."
+  }
+ },
+ "GDK-2-MT-350": {
+  "az": {
+   "name": "HiVis istiləşdirilmiş işıqqaytaran jilet",
+   "summary": "Görünmə və bədən istiliyinin vacib olduğu işlər üçün işıqqaytaran istiləşdirilmiş jilet. Tikinti meydançaları, yol işləri, logistika və sənaye obyektləri üçün idealdır."
+  },
+  "ru": {
+   "name": "Утеплённый сигнальный жилет HiVis",
+   "summary": "Утеплённый сигнальный жилет для работ, где важны заметность и тепло. Идеален для стройплощадок, дорожных работ, логистики и промышленных объектов."
+  }
+ },
+ "GDK-2-WP-235": {
+  "az": {
+   "name": "HiVis işıqqaytaran iş gödəkçəsi",
+   "summary": "Təhlükəsizlik və görünmənin kritik olduğu sənaye, enerji, tikinti və infrastruktur işləri üçün işıqqaytaran istiləşdirilmiş gödəkçə. Parlaq rəng və reflektorlar zəif işıqda görünməni artırır."
+  },
+  "ru": {
+   "name": "Сигнальная рабочая куртка HiVis",
+   "summary": "Утеплённая сигнальная куртка для промышленности, энергетики, строительства и инфраструктуры. Яркий цвет и световозвращающие элементы повышают заметность при слабом освещении."
+  }
+ },
+ "GDK-2-WP-239": {
+  "az": {
+   "name": "StormGuard iş gödəkçəsi",
+   "summary": "Sənaye, tikinti, logistika və açıq havada soyuq, külək və nəmlikdən qoruyan istiləşdirilmiş iş gödəkçəsi. Ağır hava şəraiti üçün funksional dizayn."
+  },
+  "ru": {
+   "name": "Рабочая куртка StormGuard",
+   "summary": "Утеплённая рабочая куртка для промышленности, строительства, логистики и работ на улице, защищающая от холода, ветра и влаги."
+  }
+ },
+ "GLV-5-CG-253": {
+  "az": {
+   "name": "Impact zərbə və kəsilməyə davamlı əlcəklər",
+   "summary": "Zərbə, kəsik və aşınmadan qorunmanın vacib olduğu yüksək riskli sənaye işləri üçün əlcəklər. Tikinti, mexaniki iş, logistika və ağır yüklərlə iş üçün idealdır."
+  },
+  "ru": {
+   "name": "Ударо- и порезостойкие перчатки Impact",
+   "summary": "Перчатки для работ повышенного риска, где нужна защита рук от ударов, порезов и истирания. Для строительства, механических работ, логистики и тяжёлых грузов."
+  }
+ },
+ "GLV-5-CG-304": {
+  "az": {
+   "name": "Polad Pro kəsilməyə davamlı əlcəklər",
+   "summary": "Kəsici alətlər, bıçaqlar və metal kənarlarla işləyərkən əlləri etibarlı qoruyan əlcəklər. Sıx toxunuş yüksək davamlılıq və elastiklik verir."
+  },
+  "ru": {
+   "name": "Порезостойкие перчатки Polad Pro",
+   "summary": "Защитные перчатки для работы с острыми инструментами, лезвиями и металлическими кромками. Плотная вязка обеспечивает стойкость к порезам и гибкость."
+  }
+ },
+ "GLV-5-CHG-250": {
+  "az": {
+   "name": "PVC kimyəvi davamlı əlcəklər",
+   "summary": "Mayelər, kimyəvi maddələr, yağlar və təmizləyici vasitələrlə işləyərkən əlləri qoruyan PVC əlcəklər. Texniki xidmət, sanitariya və ümumi işlər üçün uyğundur."
+  },
+  "ru": {
+   "name": "Химостойкие перчатки ПВХ",
+   "summary": "Перчатки из ПВХ для работы с жидкостями, химикатами, маслами и моющими средствами. Подходят для техобслуживания, санитарных и общих работ."
+  }
+ },
+ "GLV-5-CHG-259": {
+  "az": {
+   "name": "Nitril örtüklü qoruyucu əlcəklər",
+   "summary": "Etibarlı qoruma və yaxşı tutuş tələb olunan ümumi işlər üçün nitril örtüklü əlcəklər. Tikinti, texniki xidmət, logistika və montaj üçün uyğundur."
+  },
+  "ru": {
+   "name": "Защитные перчатки с нитриловым покрытием",
+   "summary": "Перчатки с нитриловым покрытием для общих работ, где нужны защита и хороший хват. Для строительства, техобслуживания, логистики и сборки."
+  }
+ },
+ "GLV-5-CR-249": {
+  "az": {
+   "name": "CrossFit məşq əlcəkləri",
+   "summary": "Ağırlıq qaldırma və funksional məşqlər zamanı əlləri qoruyan tam barmaqlı məşq əlcəkləri. Sürtünməni azaldır və tutuşu yaxşılaşdırır."
+  },
+  "ru": {
+   "name": "Тренировочные перчатки CrossFit",
+   "summary": "Перчатки с закрытыми пальцами для силовых и функциональных тренировок. Снижают трение, предотвращают мозоли и улучшают хват."
+  }
+ },
+ "GLV-5-CR-255-1": {
+  "az": {
+   "name": "BI FOAM qoruyucu əlcəklər",
+   "summary": "Dəqiq iş və ümumi sənaye tapşırıqları üçün tutuş, çeviklik və qoruma təmin edən iş əlcəkləri. Montaj, logistika, anbar və texniki xidmət üçün uyğundur."
+  },
+  "ru": {
+   "name": "Защитные перчатки BI FOAM",
+   "summary": "Рабочие перчатки для точных операций и общих промышленных задач: хват, ловкость и защита. Для сборки, логистики, склада и техобслуживания."
+  }
+ },
+ "GLV-5-EG-251": {
+  "az": {
+   "name": "Henne K204 iş əlcəkləri",
+   "summary": "Etibarlı tutuş, əl qorunması və yaxşı həssaslıq tələb edən işlər üçün əlcəklər. Tikinti, logistika, montaj və bağçılıq üçün uyğundur."
+  },
+  "ru": {
+   "name": "Рабочие перчатки Henne K204",
+   "summary": "Перчатки для задач, где нужны надёжный хват, защита рук и хорошая тактильность. Подходят для строительства, логистики, сборки и садовых работ."
+  }
+ },
+ "GLV-5-GL-254": {
+  "az": {
+   "name": "MedGlove L lateks müayinə əlcəkləri",
+   "summary": "Tibbi, laboratoriya və gigiyena mühitlərində birdəfəlik istifadə üçün tozsuz lateks müayinə əlcəkləri. Yüksək həssaslıq və etibarlı qoruma təmin edir."
+  },
+  "ru": {
+   "name": "Латексные смотровые перчатки MedGlove L",
+   "summary": "Неопудренные латексные перчатки для однократного использования в медицине, лабораториях и сфере гигиены. Высокая чувствительность и надёжная защита."
+  }
+ },
+ "GLV-5-MT-252": {
+  "az": {
+   "name": "HGVN01 qoruyucu əlcəklər",
+   "summary": "Etibarlı qoruma və möhkəm tutuş tələb olunan ağır iş şəraiti üçün davamlı əlcəklər. Tikinti, sənaye daşımaları və texniki xidmət üçün uyğundur."
+  },
+  "ru": {
+   "name": "Защитные перчатки HGVN01",
+   "summary": "Прочные перчатки для тяжёлых условий, где нужны надёжная защита и уверенный хват. Для строительства, погрузочных работ и техобслуживания."
+  }
+ },
+ "GLV-5-MT-257": {
+  "az": {
+   "name": "Terra K215 qoruyucu əlcəklər",
+   "summary": "Rahatlıq, çeviklik və qoruma balansı tələb edən ümumi işlər üçün əlcəklər. Montaj, logistika, qablaşdırma və yüngül tikinti üçün uyğundur."
+  },
+  "ru": {
+   "name": "Защитные перчатки Terra K215",
+   "summary": "Перчатки для общих задач с балансом комфорта, ловкости и защиты. Подходят для сборки, логистики, упаковки и лёгких строительных работ."
+  }
+ },
+ "GLV-5-MT-258": {
+  "az": {
+   "name": "Tolsen kəsilməyə davamlı əlcəklər",
+   "summary": "İti və aşındırıcı materiallarla işləmək üçün rahatlığı və dəqiqliyi qoruyan kəsilməyə davamlı əlcəklər. Metal emalı, şüşə və montaj işləri üçün uyğundur."
+  },
+  "ru": {
+   "name": "Порезостойкие перчатки Tolsen",
+   "summary": "Порезостойкие перчатки для работы с острыми и абразивными материалами без потери комфорта и точности. Для металлообработки, стекла и сборки."
+  }
+ },
+ "GSS-5-DE-312": {
+  "az": {
+   "name": "Technilux qoruyucu eynək",
+   "summary": "Toz, qırıntı və mexaniki hissəciklərə qarşı sənaye, texniki və təmir mühitlərində gözləri qoruyan eynək. Yumşaq daxili kip hissə rahat oturuş təmin edir."
+  },
+  "ru": {
+   "name": "Защитные очки Technilux",
+   "summary": "Защитные очки для промышленности, технических и ремонтных работ от пыли, осколков и механических частиц. Мягкий обтюратор обеспечивает плотное прилегание."
+  }
+ },
+ "GSS-5-MT-315": {
+  "az": {
+   "name": "Clear Vision qoruyucu eynək",
+   "summary": "Toz, qırıntı və mexaniki hissəciklərə qarşı gündəlik sənaye və emalatxana istifadəsi üçün eynək. Tək parçalı panoramik linza ön və yan tərəfləri örtür."
+  },
+  "ru": {
+   "name": "Защитные очки Clear Vision",
+   "summary": "Очки для ежедневной работы в цеху и мастерской: защита от пыли, осколков и частиц. Цельная панорамная линза закрывает фронт и боковые зоны."
+  }
+ },
+ "GSS-5-UV4-313": {
+  "az": {
+   "name": "UV400 qoruyucu eynək",
+   "summary": "Toz, qırıntı və parlaq işığa qarşı sənaye, tikinti və ümumi işlər üçün qoruyucu eynək. Panoramik linza geniş görünüş sahəsini qoruyur."
+  },
+  "ru": {
+   "name": "Защитные очки UV400",
+   "summary": "Защитные очки для промышленности, строительства и общих работ от пыли, осколков и яркого света. Панорамная линза защищает широкое поле зрения."
+  }
+ },
+ "GSS-5-UV4-314": {
+  "az": {
+   "name": "PW-34 UV400 qoruyucu eynək",
+   "summary": "Toz, uçan hissəciklər və intensiv işığa qarşı sənaye, tikinti və açıq hava işləri üçün eynək. Panoramik dizayn ön və yan tərəfləri qoruyur."
+  },
+  "ru": {
+   "name": "Защитные очки PW-34 UV400",
+   "summary": "Очки для промышленных, строительных и уличных работ от пыли, летящих частиц и интенсивного света. Панорамная конструкция защищает фронт и бока."
+  }
+ },
+ "GSS-5-UV4-316": {
+  "az": {
+   "name": "GreenShield qoruyucu eynək",
+   "summary": "Ağır sənaye və açıq hava işləri üçün etibarlı göz qoruması və vizual rahatlıq verən peşəkar eynək. Panoramik dizayn geniş qoruma sahəsi yaradır."
+  },
+  "ru": {
+   "name": "Защитные очки GreenShield",
+   "summary": "Профессиональные очки для сложных промышленных и уличных работ: надёжная защита глаз и визуальный комфорт. Панорамная форма расширяет зону защиты."
+  }
+ },
+ "GSS-5-UV4-317": {
+  "az": {
+   "name": "StreamLux UV qoruyucu eynək",
+   "summary": "Toz, qırıntı və mexaniki hissəciklərə qarşı sənaye və texniki işlərdə gözləri qoruyan eynək. Yumşaq daxili kip hissə rahat oturuş verir."
+  },
+  "ru": {
+   "name": "Защитные очки StreamLux UV",
+   "summary": "Очки для промышленных и технических работ, защищающие от пыли, осколков и механических частиц. Мягкий обтюратор обеспечивает удобную посадку."
+  }
+ },
+ "HLM-5-EHL-266": {
+  "az": {
+   "name": "Polad qoruyucu kaska",
+   "summary": "Zərbə və düşən əşya təhlükəsi olan tikinti, sənaye və təmir işlərində başı etibarlı qoruyan kaska. Möhkəm xarici qabıq mexaniki zərbələrə davamlıdır."
+  },
+  "ru": {
+   "name": "Защитная каска Polad",
+   "summary": "Каска для надёжной защиты головы на стройке, в промышленности и при ремонте, где есть риск ударов и падающих предметов. Жёсткий корпус устойчив к механическим нагрузкам."
+  }
+ },
+ "HLM-5-HL-264": {
+  "az": {
+   "name": "MSA V-Gard qoruyucu kaska",
+   "summary": "Zərbə və düşən əşya təhlükəsi olan tikinti, sənaye və təmir mühitləri üçün kaska. Möhkəm qabıq zərbə enerjisini udub paylayır."
+  },
+  "ru": {
+   "name": "Защитная каска MSA V-Gard",
+   "summary": "Каска для строительства, промышленности и ремонта при риске ударов и падения предметов. Жёсткий корпус поглощает и распределяет энергию удара."
+  }
+ },
+ "HLM-5-HL-267": {
+  "az": {
+   "name": "PH-32 qoruyucu kaska",
+   "summary": "Tikinti, istehsal və texniki işlər üçün başı etibarlı qoruyan sənaye kaskası. Davamlı xarici qabıq yüngül quruluşla zərbələrdən qoruyur."
+  },
+  "ru": {
+   "name": "Защитная каска PH-32",
+   "summary": "Промышленная каска для строительства, производства и технических работ. Прочный корпус защищает от ударов при небольшом весе."
+  }
+ },
+ "HLM-5-WP-233": {
+  "az": {
+   "name": "RainLine iş yağmurluğu",
+   "summary": "Yağışlı və ağır hava şəraitində peşəkar və açıq hava istifadəsi üçün suya davamlı yağmurluq. Tikinti, logistika və kommunal işlər üçün uyğundur."
+  },
+  "ru": {
+   "name": "Рабочий плащ-дождевик RainLine",
+   "summary": "Водонепроницаемый плащ для профессиональной работы на улице в дождь и непогоду. Подходит для строительства, логистики и коммунальных служб."
+  }
+ },
+ "JKT-1-AXF-221-1": {
+  "az": {
+   "name": "WorkLine yarımkombinezon",
+   "summary": "Etibarlı örtük və hərəkət azadlığı tələb edən sənaye, tikinti və texniki işlər üçün peşəkar yarımkombinezon. Tam uzunluqlu dizayn fiziki işlərdə praktik qoruma verir."
+  },
+  "ru": {
+   "name": "Полукомбинезон WorkLine",
+   "summary": "Профессиональный полукомбинезон для промышленности, строительства и техобслуживания, где важны защита и свобода движений. Полная длина обеспечивает практичную защиту."
+  }
+ },
+ "JKT-1-AXF-224": {
+  "az": {
+   "name": "UtilityLine iş jileti",
+   "summary": "Hərəkət rahatlığı və səliqəli görünüş tələb olunan mühafizə, xidmət və logistika işləri üçün peşəkar jilet. Qolsuz dizayn hərəkəti məhdudlaşdırmır."
+  },
+  "ru": {
+   "name": "Рабочий жилет UtilityLine",
+   "summary": "Профессиональный жилет для охраны, сервиса и логистики, где важны подвижность и аккуратный вид. Конструкция без рукавов не сковывает движений."
+  }
+ },
+ "JKT-3-WP-376": {
+  "az": {
+   "name": "StormGuard yağış gödəkçəsi",
+   "summary": "Yağışlı və küləkli havada açıq havada işləyən mütəxəssislər üçün yüngül yağış gödəkçəsi. Uzadılmış forma tikinti, logistika və xidmət işləri üçün uyğundur."
+  },
+  "ru": {
+   "name": "Дождевая куртка StormGuard",
+   "summary": "Лёгкая куртка от дождя для работы на улице в сырую и ветреную погоду. Удлинённый крой подходит для строительства, логистики и сервисных задач."
+  }
+ },
+ "JKT-3-WP-379": {
+  "az": {
+   "name": "Tinix istiləşdirilmiş iş jileti",
+   "summary": "Gündəlik işdə hərəkəti məhdudlaşdırmadan istilik verən istiləşdirilmiş iş jileti. Qolsuz dizayn köynək və ya gödəkçə üzərindən geyinmək üçün idealdır."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий жилет Tinix",
+   "summary": "Утеплённый жилет, который сохраняет тепло, не сковывая движений. Конструкция без рукавов идеальна для многослойной одежды поверх рубашки или куртки."
+  }
+ },
+ "JKT-3-WP-381": {
+  "az": {
+   "name": "Uran istiləşdirilmiş iş jileti",
+   "summary": "Qol hərəkətini məhdudlaşdırmadan bədəni isti saxlayan istiləşdirilmiş jilet. Sənaye obyektləri, anbarlar, logistika və sərin havada açıq hava işləri üçün idealdır."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий жилет Uran",
+   "summary": "Утеплённый жилет сохраняет тепло корпуса, не ограничивая движения рук. Идеален для промышленных объектов, складов, логистики и работ в прохладную погоду."
+  }
+ },
+ "JKT-3-WP-384": {
+  "az": {
+   "name": "Venor istiləşdirilmiş iş jileti",
+   "summary": "Sərin iş şəraitində istilik və hərəkət azadlığı tələb edən mütəxəssislər üçün istiləşdirilmiş jilet. Tikinti, logistika və anbar işləri üçün idealdır."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий жилет Venor",
+   "summary": "Утеплённый жилет для прохладных условий, где нужны тепло и свобода движений. Идеален для строительства, логистики и складских работ."
+  }
+ },
+ "JKT-3-WP-389": {
+  "az": {
+   "name": "Yeti istiləşdirilmiş iş jileti",
+   "summary": "Sərin iş şəraitində istilik və hərəkət azadlığı verən istiləşdirilmiş jilet. Tikinti, logistika və anbar işləri üçün uyğundur."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий жилет Yeti",
+   "summary": "Утеплённый жилет для работы в прохладных условиях: тепло и свобода движений. Подходит для строительства, логистики и склада."
+  }
+ },
+ "JLX-1-JXW2-227": {
+  "az": {
+   "name": "HiVis işıqqaytaran jilet",
+   "summary": "Yaxşı görünmə və şəxsi təhlükəsizliyin vacib olduğu dəniz, su və fövqəladə hal mühitləri üçün işıqqaytaran jilet. Parlaq rəng uzaqdan görünməni təmin edir."
+  },
+  "ru": {
+   "name": "Сигнальный жилет HiVis",
+   "summary": "Сигнальный жилет для работы на воде, на море и в аварийных ситуациях, где важны заметность и безопасность. Яркий цвет обеспечивает видимость издалека."
+  }
+ },
+ "KOM-1-MT-333": {
+  "az": {
+   "name": "ComfortGuard ağ iş dəsti",
+   "summary": "Səliqəli vahid görünüş və etibarlılıq tələb olunan sənaye, texniki xidmət və kommunal mühitlər üçün peşəkar iş dəsti."
+  },
+  "ru": {
+   "name": "Белый рабочий комплект ComfortGuard",
+   "summary": "Профессиональный рабочий комплект для промышленности, техобслуживания и коммунальной сферы, где нужны аккуратный единый вид и надёжность."
+  }
+ },
+ "KOM-1-MT-352": {
+  "az": {
+   "name": "HyperCore iş dəsti",
+   "summary": "Davamlılıq və funksionallığın vacib olduğu intensiv sənaye, texniki və mexaniki işlər üçün peşəkar iş dəsti. Texniklər və mexaniklər üçün uyğundur."
+  },
+  "ru": {
+   "name": "Рабочий комплект HyperCore",
+   "summary": "Профессиональный комплект для интенсивных промышленных, технических и механических работ, где важны прочность и функциональность. Для техников и механиков."
+  }
+ },
+ "KOM-1-MT-355": {
+  "az": {
+   "name": "LiteComfort yüngül iş dəsti",
+   "summary": "Artıq ağırlıq olmadan etibarlı qoruma istəyən mütəxəssislər üçün yüngül iş dəsti. Texniki xidmət, logistika və açıq hava işləri üçün idealdır."
+  },
+  "ru": {
+   "name": "Лёгкий рабочий комплект LiteComfort",
+   "summary": "Лёгкий комплект для тех, кому нужна надёжная защита без лишнего объёма. Идеален для техобслуживания, логистики и работ на улице."
+  }
+ },
+ "KOM-2-MT-334": {
+  "az": {
+   "name": "ComfortLine forma dəsti",
+   "summary": "Səliqəli, ciddi görünüş və gündəlik rahatlıq tələb olunan mühafizə, obyekt idarəetməsi və əməliyyat mühitləri üçün peşəkar forma dəsti."
+  },
+  "ru": {
+   "name": "Форменный комплект ComfortLine",
+   "summary": "Профессиональный форменный комплект для охраны, управления объектами и операционных служб, где нужны строгий вид и повседневный комфорт."
+  }
+ },
+ "KOM-2-MT-345": {
+  "az": {
+   "name": "Frosti istiləşdirilmiş qış iş dəsti",
+   "summary": "Tikinti meydançaları, sənaye obyektləri və logistika kimi soyuq və ağır açıq hava şəraitində işləyənlər üçün istiləşdirilmiş qış iş dəsti."
+  },
+  "ru": {
+   "name": "Утеплённый зимний комплект Frosti",
+   "summary": "Утеплённый зимний комплект для работы в холодных и суровых условиях: стройплощадки, промышленные объекты, логистика."
+  }
+ },
+ "KOM-2-MT-346": {
+  "az": {
+   "name": "GrokShield işıqqaytaran iş dəsti",
+   "summary": "Təhlükəsizlik və istilik qorumasının vacib olduğu sənaye, tikinti və açıq hava işləri üçün işıqqaytaran istiləşdirilmiş iş dəsti."
+  },
+  "ru": {
+   "name": "Сигнальный рабочий комплект GrokShield",
+   "summary": "Утеплённый сигнальный комплект для промышленности, строительства и работ на улице, где важны безопасность и защита от холода."
+  }
+ },
+ "KOM-2-MT-348": {
+  "az": {
+   "name": "HeavyDuty iş dəsti",
+   "summary": "Görünmə, qoruma və etibarlılığın vacib olduğu sənaye, tikinti və texniki işlər üçün ağır iş şəraitinə davamlı dəst."
+  },
+  "ru": {
+   "name": "Рабочий комплект HeavyDuty",
+   "summary": "Усиленный рабочий комплект для промышленности, строительства и технических работ, где важны заметность, защита и надёжность."
+  }
+ },
+ "KOM-2-MT-349": {
+  "az": {
+   "name": "HiVis Pro iş dəsti",
+   "summary": "Maksimal görünmə və qorumanın vacib olduğu açıq hava, sənaye və yüksək riskli işlər üçün işıqqaytaran iş dəsti. Parlaq flüoresent rəng uzaqdan görünür."
+  },
+  "ru": {
+   "name": "Сигнальный рабочий комплект HiVis Pro",
+   "summary": "Сигнальный комплект для работ на улице, в промышленности и в зонах повышенного риска. Яркий флуоресцентный цвет заметен издалека."
+  }
+ },
+ "KOM-2-MT-353": {
+  "az": {
+   "name": "HyperShield iş dəsti",
+   "summary": "Hərəkət rahatlığı, qoruma və davamlılığın vacib olduğu texniki, sənaye və texniki xidmət mühitləri üçün müasir iş dəsti."
+  },
+  "ru": {
+   "name": "Рабочий комплект HyperShield",
+   "summary": "Современный рабочий комплект для технических, промышленных и сервисных работ, где важны подвижность, защита и долговечность."
+  }
+ },
+ "KOM-2-MT-357": {
+  "az": {
+   "name": "Mayak universal iş dəsti",
+   "summary": "Görünmə, hərəkətlilik və etibarlılığın vacib olduğu sənaye, logistika və texniki xidmət mühitləri üçün universal iş dəsti."
+  },
+  "ru": {
+   "name": "Универсальный рабочий комплект Mayak",
+   "summary": "Универсальный комплект для промышленности, логистики и техобслуживания, где важны заметность, подвижность и надёжность."
+  }
+ },
+ "KOM-2-MT-360": {
+  "az": {
+   "name": "Mosaic işıqqaytaran iş dəsti",
+   "summary": "Yol tikintisi və infrastruktur kimi təhlükəsizlik, davamlılıq və aydın görünmənin vacib olduğu işlər üçün işıqqaytaran iş dəsti."
+  },
+  "ru": {
+   "name": "Сигнальный рабочий комплект Mosaic",
+   "summary": "Сигнальный комплект для дорожного строительства и инфраструктуры, где важны безопасность, прочность и хорошая заметность."
+  }
+ },
+ "KOM-2-MT-365": {
+  "az": {
+   "name": "PhantomPro iş dəsti",
+   "summary": "Funksionallıq, davamlılıq və gündəlik rahatlıq balansı axtaran texniklər, mexaniklər və sənaye işçiləri üçün peşəkar iş dəsti."
+  },
+  "ru": {
+   "name": "Рабочий комплект PhantomPro",
+   "summary": "Профессиональный комплект для техников, механиков и рабочих, которым нужен баланс функциональности, прочности и комфорта."
+  }
+ },
+ "KOM-2-MT-367": {
+  "az": {
+   "name": "ProGuard mühafizə forması",
+   "summary": "Mühafizə xidmətləri, giriş nəzarəti, patrul və sənaye monitorinqi üzrə işləyən əməkdaşlar üçün peşəkar forma dəsti."
+  },
+  "ru": {
+   "name": "Форма охраны ProGuard",
+   "summary": "Профессиональный комплект для сотрудников охраны, контроля доступа, патрулирования и промышленного мониторинга."
+  }
+ },
+ "KOM-2-MT-375": {
+  "az": {
+   "name": "Skalan Core iş dəsti",
+   "summary": "Funksionallıq, davamlılıq və gündəlik rahatlıq balansı axtaran texniklər, mexaniklər və sənaye işçiləri üçün peşəkar iş dəsti."
+  },
+  "ru": {
+   "name": "Рабочий комплект Skalan Core",
+   "summary": "Профессиональный комплект для техников, механиков и рабочих: баланс функциональности, прочности и повседневного комфорта."
+  }
+ },
+ "KOM-3-MT-330": {
+  "az": {
+   "name": "ArcticPro istiləşdirilmiş iş gödəkçəsi",
+   "summary": "İstilik və davamlılığın vacib olduğu soyuq havada sənaye, açıq hava və kommunal işlər üçün istiləşdirilmiş iş gödəkçəsi."
+  },
+  "ru": {
+   "name": "Утеплённая рабочая куртка ArcticPro",
+   "summary": "Утеплённая рабочая куртка для промышленных, уличных и коммунальных работ в холодную погоду, где важны тепло и прочность."
+  }
+ },
+ "KOM-3-MT-359": {
+  "az": {
+   "name": "MironShield işıqqaytaran qış dəsti",
+   "summary": "Yol təmiri, tikinti və logistika kimi soyuq, açıq və zəif işıqlı mühitlərdə işləyənlər üçün istiləşdirilmiş işıqqaytaran iş dəsti."
+  },
+  "ru": {
+   "name": "Зимний сигнальный комплект MironShield",
+   "summary": "Утеплённый сигнальный комплект для работы на холоде, на улице и при слабом освещении: ремонт дорог, строительство, логистика."
+  }
+ },
+ "KOM-3-WP-368": {
+  "az": {
+   "name": "RavenLine iş gödəkçəsi",
+   "summary": "Soyuq və küləkdən qorunmanın vacib olduğu sənaye, logistika, kommunal və açıq hava xidmət işləri üçün istiləşdirilmiş iş gödəkçəsi."
+  },
+  "ru": {
+   "name": "Рабочая куртка RavenLine",
+   "summary": "Утеплённая куртка для промышленности, логистики, коммунальных служб и работ на улице, где важна защита от холода и ветра."
+  }
+ },
+ "KOM-3-WP-369": {
+  "az": {
+   "name": "RetvenShield qış iş dəsti",
+   "summary": "İstilik qoruması və görünmənin kritik olduğu soyuq, sənaye və açıq hava mühitləri üçün istiləşdirilmiş qış iş dəsti. Uzadılmış forma əlavə qoruma verir."
+  },
+  "ru": {
+   "name": "Зимний рабочий комплект RetvenShield",
+   "summary": "Утеплённый зимний комплект для холода, промышленности и работ на улице, где критичны тепло и заметность. Удлинённый крой даёт дополнительную защиту."
+  }
+ },
+ "KOM-3-WP-370": {
+  "az": {
+   "name": "SafetyPlus işıqqaytaran iş dəsti",
+   "summary": "İstilik və təhlükəsizliyin birlikdə vacib olduğu soyuq açıq hava və sənaye mühitləri üçün istiləşdirilmiş işıqqaytaran dəst."
+  },
+  "ru": {
+   "name": "Сигнальный рабочий комплект SafetyPlus",
+   "summary": "Утеплённый сигнальный комплект для холодных уличных и промышленных условий, где важны и тепло, и безопасность."
+  }
+ },
+ "KOM-3-WP-377": {
+  "az": {
+   "name": "Tayfun iş dəsti",
+   "summary": "Davamlılıq, görünmə və gündəlik rahatlığın vacib olduğu sənaye, texniki xidmət və texniki mühitlər üçün peşəkar iş dəsti."
+  },
+  "ru": {
+   "name": "Рабочий комплект Tayfun",
+   "summary": "Профессиональный комплект для промышленности, техобслуживания и технических работ, где важны прочность, заметность и комфорт."
+  }
+ },
+ "KOM-3-WP-380": {
+  "az": {
+   "name": "ThermoLake istiləşdirilmiş iş dəsti",
+   "summary": "İstilik qoruması və görünmənin vacib olduğu soyuq və ağır şəraitdə işləyənlər üçün istiləşdirilmiş gödəkçə və şalvar dəsti."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий комплект ThermoLake",
+   "summary": "Утеплённая куртка и брюки для работы в холодных и сложных условиях, где важны защита от холода и заметность."
+  }
+ },
+ "KOM-3-WP-383": {
+  "az": {
+   "name": "Veno işıqqaytaran iş dəsti",
+   "summary": "Yol tikintisi, kommunal xidmətlər, logistika və sənaye sahələri kimi yüksək riskli mühitlər üçün maksimal görünən işıqqaytaran iş dəsti."
+  },
+  "ru": {
+   "name": "Сигнальный рабочий комплект Veno",
+   "summary": "Сигнальный комплект максимальной заметности для зон повышенного риска: дорожное строительство, коммунальные службы, логистика, промышленность."
+  }
+ },
+ "KOM-4-WP-340": {
+  "az": {
+   "name": "DeepBlue istiləşdirilmiş iş kostyumu",
+   "summary": "Qoruma, görünmə və istilik rahatlığının vacib olduğu soyuq havada sənaye, tikinti və açıq hava işləri üçün istiləşdirilmiş iş kostyumu (gödəkçə və şalvar)."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий костюм DeepBlue",
+   "summary": "Утеплённый костюм (куртка и брюки) для промышленных, строительных и уличных работ в холод, где важны защита, заметность и тепло."
+  }
+ },
+ "KOM-4-WP-342": {
+  "az": {
+   "name": "DiamondPro istiləşdirilmiş iş dəsti",
+   "summary": "Tikinti meydançaları, sənaye obyektləri və texniki xidmət zonaları kimi soyuq və ağır açıq hava şəraiti üçün istiləşdirilmiş iş dəsti."
+  },
+  "ru": {
+   "name": "Утеплённый рабочий комплект DiamondPro",
+   "summary": "Утеплённый комплект для холодных и суровых условий на улице: стройплощадки, промышленные объекты, зоны техобслуживания."
+  }
+ },
+ "MHD-2-AXF-241": {
+  "az": {
+   "name": "ServiceWear forma dəsti",
+   "summary": "Səliqəli və nümayəndəli görünüşün vacib olduğu mühafizə, xidmət, inzibati və korporativ mühitlər üçün köynək və şalvardan ibarət peşəkar forma."
+  },
+  "ru": {
+   "name": "Форменный комплект ServiceWear",
+   "summary": "Профессиональная форма (рубашка и брюки) для охраны, сервиса, административных и корпоративных сред, где важен представительный вид."
+  }
+ },
+ "PLK-1-AXF-242": {
+  "az": {
+   "name": "CoreWear polo köynək",
+   "summary": "Korporativ, xidmət, pərakəndə və qonaqpərvərlik mühitlərində peşəkar və gündəlik istifadə üçün klassik qısaqol polo köynək."
+  },
+  "ru": {
+   "name": "Поло CoreWear",
+   "summary": "Классическое поло с коротким рукавом для корпоративной сферы, сервиса, розницы и гостеприимства."
+  }
+ },
+ "PLK-1-AXF-336": {
+  "az": {
+   "name": "CorePolo göy futbolka",
+   "summary": "Xidmət, sənaye, logistika və korporativ mühitlərdə gündəlik peşəkar istifadə üçün klassik qısaqol futbolka. Sadə dizaynı vahid forma üçün uyğundur."
+  },
+  "ru": {
+   "name": "Синяя футболка CorePolo",
+   "summary": "Классическая футболка с коротким рукавом для сервиса, промышленности, логистики и офиса. Простой дизайн подходит для единой формы."
+  }
+ },
+ "PLK-1-AXF-337": {
+  "az": {
+   "name": "CorePolo klassik polo",
+   "summary": "Korporativ, xidmət, pərakəndə və qonaqpərvərlik mühitləri üçün zamansız görünüşlü klassik qısaqol polo köynək."
+  },
+  "ru": {
+   "name": "Классическое поло CorePolo",
+   "summary": "Классическое поло с коротким рукавом и вневременным видом для корпоративной сферы, сервиса, розницы и гостеприимства."
+  }
+ },
+ "PLK-1-AXF-338": {
+  "az": {
+   "name": "CorePolo uzunqol polo",
+   "summary": "Səliqəli və çoxyönlü görünüş tələb olunan korporativ, xidmət və əməliyyat mühitləri üçün uzunqol polo köynək."
+  },
+  "ru": {
+   "name": "Поло с длинным рукавом CorePolo",
+   "summary": "Поло с длинным рукавом для корпоративной, сервисной и операционной среды, где нужен аккуратный универсальный вид."
+  }
+ },
+ "PLK-1-AXF-339": {
+  "az": {
+   "name": "CorePolo iş futbolkası",
+   "summary": "Sənaye, xidmət, logistika və korporativ mühitlərdə gündəlik istifadə üçün klassik qısaqol futbolka. Sadə və çoxyönlü dizayn."
+  },
+  "ru": {
+   "name": "Рабочая футболка CorePolo",
+   "summary": "Классическая футболка с коротким рукавом для промышленности, сервиса, логистики и офиса. Простой универсальный дизайн."
+  }
+ },
+ "PPS-5-AXF-319": {
+  "az": {
+   "name": "Medic tibbi sabo",
+   "summary": "Gigiyena, rahatlıq və praktikliyin vacib olduğu səhiyyə, laboratoriya və xidmət mühitləri üçün peşəkar tibbi sabo. Perforasiyalı üst hissə hava keçirir."
+  },
+  "ru": {
+   "name": "Медицинские сабо Medic",
+   "summary": "Профессиональные медицинские сабо для здравоохранения, лабораторий и сервиса, где важны гигиена и комфорт. Перфорированный верх обеспечивает вентиляцию."
+  }
+ },
+ "PPS-5-AXF-321": {
+  "az": {
+   "name": "Cador S1P iş ayaqqabısı",
+   "summary": "Çeviklik, hava keçiriciliyi və etibarlı qorumanın vacib olduğu aktiv iş mühitləri üçün yüngül S1P təhlükəsizlik ayaqqabısı."
+  },
+  "ru": {
+   "name": "Защитные полуботинки Cador S1P",
+   "summary": "Лёгкая защитная обувь класса S1P для активной работы, где важны гибкость, воздухопроницаемость и надёжная защита."
+  }
+ },
+ "PPS-5-AXF-323": {
+  "az": {
+   "name": "Marisa dəri yarımçəkmə",
+   "summary": "Səliqəli görünüş, davamlılıq və rahatlığın vacib olduğu peşəkar və gündəlik istifadə üçün klassik dəri yarımçəkmə."
+  },
+  "ru": {
+   "name": "Кожаные ботильоны Marisa",
+   "summary": "Классические кожаные ботинки для профессионального и повседневного использования, где важны опрятный вид, прочность и комфорт."
+  }
+ },
+ "PPS-5-AXF-324": {
+  "az": {
+   "name": "Moon Walk Elegance alçaq dabanlı tufli",
+   "summary": "Zəriflik, rahatlıq və praktikliyin eyni dərəcədə vacib olduğu peşəkar mühitlər üçün klassik alçaq dabanlı dəri tufli."
+  },
+  "ru": {
+   "name": "Туфли на низком каблуке Moon Walk Elegance",
+   "summary": "Классические кожаные туфли на низком каблуке для деловой среды, где одинаково важны элегантность, комфорт и практичность."
+  }
+ },
+ "PPS-5-AXF-325": {
+  "az": {
+   "name": "PL-250 ActiveGuard S1P iş ayaqqabısı",
+   "summary": "Qoruma, rahatlıq və hərəkətliliyin vacib olduğu sənaye və texniki mühitlər üçün alçaq boğazlı S1P təhlükəsizlik ayaqqabısı."
+  },
+  "ru": {
+   "name": "Защитные полуботинки PL-250 ActiveGuard S1P",
+   "summary": "Низкие защитные полуботинки класса S1P для промышленных и технических работ, где важны защита, комфорт и подвижность."
+  }
+ },
+ "PPS-5-AXF-326": {
+  "az": {
+   "name": "PU1602 FlexShield iş ayaqqabısı",
+   "summary": "Asan geyinmə, davamlılıq və rahatlığın vacib olduğu gündəlik sənaye istifadəsi üçün bağsız təhlükəsizlik ayaqqabısı. Perforasiyalı üst hissə hava keçirir."
+  },
+  "ru": {
+   "name": "Защитная обувь PU1602 FlexShield",
+   "summary": "Защитная обувь без шнурков для ежедневной работы на производстве. Перфорированный верх улучшает вентиляцию."
+  }
+ },
+ "PPS-5-AXF-327": {
+  "az": {
+   "name": "Zain GuardPro iş çəkməsi",
+   "summary": "Ağır sənaye və tikinti mühitlərində ayağı etibarlı qoruyan və topuğu dəstəkləyən hündür boğazlı təhlükəsizlik çəkməsi."
+  },
+  "ru": {
+   "name": "Защитные ботинки Zain GuardPro",
+   "summary": "Высокие защитные ботинки с поддержкой голеностопа для тяжёлых промышленных и строительных работ."
+  }
+ },
+ "PPS-5-AXF-328": {
+  "az": {
+   "name": "UL-100 S3 IronStep iş ayaqqabısı",
+   "summary": "Ağır iş şəraitində etibarlı qoruma və gündəlik rahatlıq üçün alçaq boğazlı S3 təhlükəsizlik ayaqqabısı. Davamlı dəri üst hissə aşınmaya davamlıdır."
+  },
+  "ru": {
+   "name": "Защитные полуботинки UL-100 S3 IronStep",
+   "summary": "Низкие защитные полуботинки класса S3 для надёжной защиты и комфорта в тяжёлых условиях. Прочный кожаный верх устойчив к истиранию."
+  }
+ },
+ "PPS-5-PPS2-322": {
+  "az": {
+   "name": "Enum WorkShield S2 iş ayaqqabısı",
+   "summary": "Etibarlı ayaq qoruması və gündəlik rahatlıq tələb olunan sənaye və texniki mühitlər üçün alçaq boğazlı S2 təhlükəsizlik ayaqqabısı."
+  },
+  "ru": {
+   "name": "Защитные полуботинки Enum WorkShield S2",
+   "summary": "Низкие защитные полуботинки класса S2 для промышленных и технических работ с надёжной защитой и комфортом."
+  }
+ },
+ "PPS-5-PPS3-320": {
+  "az": {
+   "name": "BestBoy MetalFree S3 iş çəkməsi",
+   "summary": "Maksimal qoruma və davamlılıq tələb olunan ağır sənaye və tikinti mühitləri üçün metalsız, hündür boğazlı S3 təhlükəsizlik çəkməsi."
+  },
+  "ru": {
+   "name": "Защитные ботинки BestBoy MetalFree S3",
+   "summary": "Высокие безметалловые ботинки класса S3 для тяжёлых промышленных и строительных работ, где нужны максимальная защита и прочность."
+  }
+ },
+ "QD-2-WLP3-230": {
+  "az": {
+   "name": "WeldGuard qaynaqçı dəsti",
+   "summary": "Etibarlı qoruma və davamlılığın vacib olduğu qaynaq, metal emalı və ağır sənaye işləri üçün gödəkçə və şalvardan ibarət qoruyucu dəst."
+  },
+  "ru": {
+   "name": "Комплект сварщика WeldGuard",
+   "summary": "Защитный комплект (куртка и брюки) для сварки, металлообработки и тяжёлой промышленности, где важны надёжная защита и прочность."
+  }
+ },
+ "QD-2-WLP3-356": {
+  "az": {
+   "name": "MagmaPro qaynaqçı kombinezonu",
+   "summary": "Yüksək temperaturlu sənaye mühitlərində qaynaqçılar, metal emalçıları və təmir mütəxəssisləri üçün peşəkar qaynaq iş dəsti."
+  },
+  "ru": {
+   "name": "Сварочный комплект MagmaPro",
+   "summary": "Профессиональный сварочный комплект для работы при высоких температурах — для сварщиков, металлообработчиков и ремонтников."
+  }
+ },
+ "QQL-5-EM-260": {
+  "az": {
+   "name": "EM5001B qoruyucu qulaqlıq",
+   "summary": "Sənaye və peşəkar mühitlərdə zərərli səs-küyün təsirini azaldan qoruyucu qulaqlıq. Tikinti, fabrik və emalatxanalar üçün uyğundur."
+  },
+  "ru": {
+   "name": "Защитные наушники EM5001B",
+   "summary": "Защитные наушники, снижающие воздействие вредного шума на производстве и в профессиональной среде. Для стройплощадок, цехов и мастерских."
+  }
+ },
+ "QQL-5-EM-261": {
+  "az": {
+   "name": "3M Optime 98 qoruyucu qulaqlıq",
+   "summary": "Ağır sənaye və peşə mühitlərində yüksək səviyyəli səs-küy azaldılması təmin edən peşəkar qoruyucu qulaqlıq."
+  },
+  "ru": {
+   "name": "Защитные наушники 3M Optime 98",
+   "summary": "Профессиональные наушники с высоким уровнем шумоподавления для сложных промышленных и производственных условий."
+  }
+ },
+ "QQL-5-EM-262": {
+  "az": {
+   "name": "2411-T ipli qulaq tıxacları",
+   "summary": "Orta və yüksək səs-küy səviyyəsində etibarlı eşitmə qoruması verən təkrar istifadə olunan ipli qulaq tıxacları."
+  },
+  "ru": {
+   "name": "Беруши на шнурке 2411-T",
+   "summary": "Многоразовые беруши на шнурке для надёжной защиты слуха при среднем и высоком уровне шума."
+  }
+ },
+ "QQL-5-EM-263": {
+  "az": {
+   "name": "MAX-500 qoruyucu qulaqlıq",
+   "summary": "Tikinti meydançaları, sənaye obyektləri, emalatxanalar və mexaniki işlər kimi səs-küylü mühitlərdə effektiv eşitmə qoruması."
+  },
+  "ru": {
+   "name": "Защитные наушники MAX-500",
+   "summary": "Эффективная защита слуха в шумной среде: стройплощадки, промышленные объекты, мастерские и механические работы."
+  }
+ },
+ "QQL-5-EM-263-1": {
+  "az": {
+   "name": "STARLINE 1470-AL qoruyucu kaska",
+   "summary": "Düşən əşya və zərbə riski olan tikinti, sənaye və texniki işlərdə başı etibarlı qoruyan kaska."
+  },
+  "ru": {
+   "name": "Защитная каска STARLINE 1470-AL",
+   "summary": "Каска для надёжной защиты головы на стройке, в промышленности и на технических объектах при риске падения предметов и ударов."
+  }
+ },
+ "RSP-5-DM-268": {
+  "az": {
+   "name": "Safe KN95 respirator maska",
+   "summary": "Peşəkar və gündəlik mühitlərdə havadakı hissəciklərə, toza və incə aerozollara qarşı effektiv filtrasiya verən KN95 respirator maska."
+  },
+  "ru": {
+   "name": "Респиратор KN95 Safe",
+   "summary": "Респиратор KN95 для эффективной фильтрации частиц, пыли и мелкодисперсных аэрозолей в профессиональной и повседневной среде."
+  }
+ },
+ "RSP-5-DM-270": {
+  "az": {
+   "name": "KN95 qoruyucu maska",
+   "summary": "Havadakı hissəciklərə, toza və incə aerozollara qarşı effektiv filtrasiya verən çoxqatlı KN95 qoruyucu maska."
+  },
+  "ru": {
+   "name": "Защитная маска KN95",
+   "summary": "Многослойная маска KN95 для эффективной фильтрации частиц, пыли и мелкодисперсных аэрозолей."
+  }
+ },
+ "RSP-5-F2-282": {
+  "az": {
+   "name": "BlackGuard tam üz qaz maskası",
+   "summary": "Təhlükəli iş mühitlərində tənəffüs sistemini və gözləri hərtərəfli qoruyan tam üz əleyhqaz respiratoru."
+  },
+  "ru": {
+   "name": "Полнолицевая маска BlackGuard",
+   "summary": "Полнолицевой противогазный респиратор для комплексной защиты органов дыхания и глаз в опасных условиях."
+  }
+ },
+ "RSP-5-FM-269": {
+  "az": {
+   "name": "Unix 531 respirator filtri",
+   "summary": "Sənaye və peşəkar mühitlərdə zərərli qazlar, buxarlar və havadakı çirkləndiricilərə qarşı etibarlı qoruma verən dəyişdirilə bilən filtr kartuşu."
+  },
+  "ru": {
+   "name": "Фильтр для респиратора Unix 531",
+   "summary": "Сменный фильтрующий патрон для надёжной защиты от вредных газов, паров и загрязнений воздуха на производстве."
+  }
+ },
+ "RSP-5-FM-269-1": {
+  "az": {
+   "name": "M-6059 respirator filtr kartuşu",
+   "summary": "Zərərli qazlar, buxarlar və havadakı çirkləndiricilərə qarşı etibarlı qoruma verən dəyişdirilə bilən filtr kartuşu."
+  },
+  "ru": {
+   "name": "Фильтрующий патрон M-6059",
+   "summary": "Сменный патрон для надёжной защиты от вредных газов, паров и загрязнений воздуха."
+  }
+ },
+ "RSP-5-FM-272": {
+  "az": {
+   "name": "M-6800 tam üz respirator maskası",
+   "summary": "Havadakı hissəciklərə, toza və aerozollara qarşı peşəkar mühitlərdə tənəffüs qoruması verən tam üz respirator maskası."
+  },
+  "ru": {
+   "name": "Полнолицевая маска M-6800",
+   "summary": "Полнолицевая маска для защиты органов дыхания от частиц, пыли и аэрозолей в профессиональной среде."
+  }
+ },
+ "RSP-5-FM-273": {
+  "az": {
+   "name": "M-7502 yarımüz respirator maskası",
+   "summary": "Sənaye və peşəkar mühitlərdə qazlara, buxarlara və hissəciklərə qarşı etibarlı tənəffüs qoruması verən təkrar istifadə olunan yarımüz maskası."
+  },
+  "ru": {
+   "name": "Полумаска M-7502",
+   "summary": "Многоразовая полумаска для надёжной защиты органов дыхания от газов, паров и частиц на производстве."
+  }
+ },
+ "RSP-5-FM-274": {
+  "az": {
+   "name": "Unix JSP tam üz respirator maskası",
+   "summary": "Təhlükəli qazlar, buxarlar və aerozolların olduğu ağır sənaye mühitlərində yüksək səviyyəli tənəffüs qoruması verən təkrar istifadə olunan tam üz respiratoru."
+  },
+  "ru": {
+   "name": "Полнолицевая маска Unix JSP",
+   "summary": "Многоразовый полнолицевой респиратор с высоким уровнем защиты органов дыхания от опасных газов, паров и аэрозолей."
+  }
+ },
+ "TBM-5-TLAZ-292": {
+  "az": {
+   "name": "SoftCare birdəfəlik göz örtüyü",
+   "summary": "Gigiyenaya həssas və qulluq mühitlərində göz nahiyəsini yumşaq örtən və qoruyan birdəfəlik göz örtüyü."
+  },
+  "ru": {
+   "name": "Одноразовая повязка на глаза SoftCare",
+   "summary": "Одноразовая повязка для мягкой защиты области глаз в учреждениях с повышенными требованиями к гигиене и уходу."
+  }
+ },
+ "TBM-5-X01-284": {
+  "az": {
+   "name": "LifeSoft birdəfəlik bahil",
+   "summary": "Qapalı məkanları ayaqqabı ilə gələn çirk, toz və xarici çirkləndiricilərdən qoruyan birdəfəlik bahillər. Tibbi, sənaye və xidmət mühitləri üçün uyğundur."
+  },
+  "ru": {
+   "name": "Одноразовые бахилы LifeSoft",
+   "summary": "Одноразовые бахилы для защиты помещений от грязи, пыли и загрязнений с обуви. Подходят для медицины, производства и сервиса."
+  }
+ },
+ "XLT-1-AXF-231": {
+  "az": {
+   "name": "MedLine tibbi tunika",
+   "summary": "Səliqəli görünüş və rahatlığın vacib olduğu səhiyyə, laboratoriya və sağlamlıq mərkəzləri üçün peşəkar tibbi tunika."
+  },
+  "ru": {
+   "name": "Медицинская туника MedLine",
+   "summary": "Профессиональная медицинская туника для клиник, лабораторий и wellness-центров, где важны аккуратный вид и комфорт."
+  }
+ },
+ "XLT-1-AXF-238": {
+  "az": {
+   "name": "LabPure laboratoriya xalatı",
+   "summary": "Təmizlik və səliqəli görünüşün vacib olduğu tibbi, laboratoriya, əczaçılıq və təhsil mühitləri üçün peşəkar laboratoriya xalatı."
+  },
+  "ru": {
+   "name": "Лабораторный халат LabPure",
+   "summary": "Профессиональный лабораторный халат для медицины, лабораторий, фармацевтики и образования, где важны чистота и опрятный вид."
+  }
+ },
+ "XLT-1-AXF-240": {
+  "az": {
+   "name": "LabEase iş xalatı",
+   "summary": "Rahatlıq və səliqəli görünüşün vacib olduğu tibbi, laboratoriya, əczaçılıq və xidmət mühitləri üçün yüngül peşəkar xalat."
+  },
+  "ru": {
+   "name": "Рабочий халат LabEase",
+   "summary": "Лёгкий профессиональный халат для медицины, лабораторий, фармацевтики и сервиса, где важны комфорт и аккуратный вид."
+  }
+ },
+ "XLT-1-AXF-331": {
+  "az": {
+   "name": "ChefLine aşpaz dəsti",
+   "summary": "Restoranlar, peşəkar mətbəxlər, ketrinq və qonaqpərvərlik mühitləri üçün müasir görünüşlü və praktik peşəkar aşpaz forması."
+  },
+  "ru": {
+   "name": "Комплект повара ChefLine",
+   "summary": "Профессиональная форма повара для ресторанов, профессиональных кухонь, кейтеринга и гостеприимства: современный вид и практичность."
+  }
+ },
+ "XLT-1-AXF-343": {
+  "az": {
+   "name": "EcoLine təmizlik forması",
+   "summary": "Səliqəli görünüş və praktikliyin vacib olduğu qonaqpərvərlik, səhiyyə, təmizlik xidmətləri və obyekt baxımı üçün peşəkar forma dəsti."
+  },
+  "ru": {
+   "name": "Форма для клининга EcoLine",
+   "summary": "Профессиональный комплект для гостеприимства, здравоохранения, клининга и обслуживания объектов, где важны опрятность и практичность."
+  }
+ },
+ "XLT-1-AXF-351": {
+  "az": {
+   "name": "HygienePlus tibbi forma dəsti",
+   "summary": "Uzun növbələr boyu rahatlıq, gigiyena və müasir görünüş istəyən səhiyyə mütəxəssisləri üçün peşəkar tibbi forma dəsti."
+  },
+  "ru": {
+   "name": "Медицинский комплект HygienePlus",
+   "summary": "Профессиональный медицинский комплект для специалистов здравоохранения: комфорт, гигиена и современный вид на протяжении долгих смен."
+  }
+ },
+ "XLT-1-AXF-362": {
+  "az": {
+   "name": "NorthShield xidmət forması",
+   "summary": "Gigiyena, rahatlıq və təmiz görünüşün vacib olduğu səhiyyə, təmizlik, laboratoriya və xidmət mühitləri üçün minimalist peşəkar forma."
+  },
+  "ru": {
+   "name": "Сервисная форма NorthShield",
+   "summary": "Минималистичная профессиональная форма для медицины, клининга, лабораторий и сервиса, где важны гигиена и комфорт."
+  }
+ },
+ "XLT-1-AXF-371": {
+  "az": {
+   "name": "ServiceBase xidmət forması",
+   "summary": "İş günü boyunca təmiz, səliqəli və rahat görünüş istəyən tibbi və xidmət əməkdaşları üçün yüngül peşəkar forma dəsti."
+  },
+  "ru": {
+   "name": "Сервисная форма ServiceBase",
+   "summary": "Лёгкий профессиональный комплект для медицинского и сервисного персонала: чистый, аккуратный и комфортный вид весь день."
+  }
+ },
+ "XLT-1-AXF-372": {
+  "az": {
+   "name": "ServiceLine xidmət forması",
+   "summary": "Gündəlik vəzifələr üçün səliqəli, funksional və nümayəndəli forma istəyən tibbi, təmizlik və xidmət əməkdaşları üçün dəst."
+  },
+  "ru": {
+   "name": "Сервисная форма ServiceLine",
+   "summary": "Аккуратная и функциональная форма для медицинского, клинингового и сервисного персонала на каждый день."
+  }
+ },
+ "XLT-1-AXF-373": {
+  "az": {
+   "name": "ServicePro xidmət forması",
+   "summary": "İş günü boyunca səliqəli, müasir və rahat görünüş istəyən tibbi, təmizlik və qonaqpərvərlik əməkdaşları üçün peşəkar forma dəsti."
+  },
+  "ru": {
+   "name": "Сервисная форма ServicePro",
+   "summary": "Профессиональный комплект для медицинского, клинингового персонала и сферы гостеприимства: аккуратный и современный вид весь день."
+  }
+ },
+ "XLT-1-AXF-382": {
+  "az": {
+   "name": "UrbanClean xidmət forması",
+   "summary": "Səliqəli və nizamlı görünüşün vacib olduğu təmizlik, qonaqpərvərlik, səhiyyə və texniki xidmət vəzifələri üçün gündəlik peşəkar forma."
+  },
+  "ru": {
+   "name": "Сервисная форма UrbanClean",
+   "summary": "Повседневная профессиональная форма для клининга, гостеприимства, медицинского и технического персонала, где важен опрятный вид."
+  }
+ },
+ "XLT-2-AXF-229": {
+  "az": {
+   "name": "ChefLine aşpaz gödəkçəsi",
+   "summary": "Kommersiya mətbəxləri, restoranlar, ketrinq və qonaqpərvərlik mühitləri üçün ciddi görünüşlü və praktik peşəkar aşpaz gödəkçəsi."
+  },
+  "ru": {
+   "name": "Китель повара ChefLine",
+   "summary": "Профессиональный поварской китель для коммерческих кухонь, ресторанов, кейтеринга и гостиничного бизнеса."
+  }
+ },
+ "YRK-1-MT-358": {
+  "az": {
+   "name": "MegaMech iş kombinezonu",
+   "summary": "Etibarlı qoruma, hərəkət azadlığı və funksional ciblər tələb edən mexaniklər, texniklər və sənaye işçiləri üçün peşəkar iş kombinezonu."
+  },
+  "ru": {
+   "name": "Рабочий комбинезон MegaMech",
+   "summary": "Профессиональный комбинезон для механиков, техников и рабочих: надёжная защита, свобода движений и функциональные карманы."
+  }
+ },
+ "YRK-2-MT-341": {
+  "az": {
+   "name": "DiamondCore yarımkombinezon",
+   "summary": "Qoruma və funksionallığın vacib olduğu tikinti, texniki xidmət, sənaye və texniki işlər üçün davamlı yarımkombinezon."
+  },
+  "ru": {
+   "name": "Полукомбинезон DiamondCore",
+   "summary": "Прочный полукомбинезон для строительства, техобслуживания и промышленности, где важны защита и функциональность."
+  }
+ },
+ "YRK-2-MT-361": {
+  "az": {
+   "name": "MountainPro yarımkombinezon",
+   "summary": "Davamlılıq, təhlükəsizlik və praktikliyin vacib olduğu sənaye, tikinti və texniki işlər üçün peşəkar yarımkombinezon."
+  },
+  "ru": {
+   "name": "Полукомбинезон MountainPro",
+   "summary": "Профессиональный полукомбинезон для промышленности, строительства и технических работ, где важны прочность, безопасность и практичность."
+  }
+ },
+ "YRK-2-MT-363": {
+  "az": {
+   "name": "OranPro işıqqaytaran kombinezon",
+   "summary": "Ağır şəraitdə əlavə təhlükəsizlik tələb edən sənaye, tikinti, yol təmiri və kommunal mütəxəssislər üçün işıqqaytaran iş kombinezonu."
+  },
+  "ru": {
+   "name": "Сигнальный комбинезон OranPro",
+   "summary": "Сигнальный рабочий комбинезон для промышленности, строительства, ремонта дорог и коммунальных служб, где нужна повышенная безопасность."
+  }
+ },
+ "YRK-2-MT-364": {
+  "az": {
+   "name": "Palitra işıqqaytaran kombinezon",
+   "summary": "Maksimal görünmə və təhlükəsizliyin vacib olduğu tikinti, yol təmiri, logistika və sənaye işləri üçün işıqqaytaran kombinezon."
+  },
+  "ru": {
+   "name": "Сигнальный комбинезон Palitra",
+   "summary": "Сигнальный комбинезон для строительства, ремонта дорог, логистики и промышленности, где важны максимальная заметность и безопасность."
+  }
+ },
+ "YRK-2-MT-385": {
+  "az": {
+   "name": "Vofax iş kombinezonu",
+   "summary": "Sənaye və tikinti işləri üçün iş kombinezonu. Ətraflı təsvir şirkətdən təsdiq gözləyir."
+  },
+  "ru": {
+   "name": "Рабочий комбинезон Vofax",
+   "summary": "Рабочий комбинезон для промышленных и строительных работ. Подробное описание ожидает подтверждения компании."
+  }
+ }
+}

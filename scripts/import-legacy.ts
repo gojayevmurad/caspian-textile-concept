@@ -63,7 +63,7 @@ const decodePath = (url: string) => {
 const products: LegacyProduct[] = JSON.parse(
   await readFile(join(dataDir, "products.normalized.json"), "utf8"),
 );
-const draftsPath = resolve(dataDir, "..", "translations.draft.json");
+const draftsPath = resolve("data/translations.draft.json");
 const drafts: Record<string, Draft> = (await exists(draftsPath))
   ? JSON.parse(await readFile(draftsPath, "utf8"))
   : {};
@@ -175,7 +175,14 @@ try {
       .insert(schema.product)
       .values({
         sku: p.sku,
-        status: "published",
+        // Obvious duplicates on the old site (e.g. "… (Copy)") are imported as drafts, not published.
+        status: /\(copy\)/i.test(
+          Object.values(translations)
+            .map((t) => t!.name)
+            .join(" "),
+        )
+          ? "draft"
+          : "published",
         brand,
         priceAmount: p.price.amount != null ? p.price.amount.toFixed(2) : null,
         currency: p.price.currency ?? "AZN",
@@ -420,8 +427,16 @@ try {
       const target = pageRules.find(([re]) => re.test(slug))?.[1];
       await db
         .insert(schema.redirect)
-        .values({ fromPath: from, toPath: localePath(l, target), statusCode: 301, source: "legacy-import" })
-        .onConflictDoUpdate({ target: schema.redirect.fromPath, set: { toPath: localePath(l, target) } });
+        .values({
+          fromPath: from,
+          toPath: localePath(l, target),
+          statusCode: 301,
+          source: "legacy-import",
+        })
+        .onConflictDoUpdate({
+          target: schema.redirect.fromPath,
+          set: { toPath: localePath(l, target) },
+        });
       stats.redirects++;
     }
   }
