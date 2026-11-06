@@ -11,7 +11,10 @@ export default async function Page() {
         <div className="auth-card">
           <span className="overline">CASPIAN TEXTILE · ADMIN</span>
           <h1>Admin panelə giriş</h1>
-          <p>Demo hesab məlumatları case-study səhifəsində və müraciət məktubunda verilib.</p>
+          <p>
+            Demo hesab məlumatları case-study səhifəsində və müraciət məktubunda
+            verilib.
+          </p>
           <Suspense fallback={<p>Loading form…</p>}>
             <AuthForm
               mode="sign-in"
