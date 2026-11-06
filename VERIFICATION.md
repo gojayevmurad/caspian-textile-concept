@@ -1,64 +1,29 @@
-# Verification report
+# Verification report — Caspian Textile concept
 
-Verified locally on 16 October 2026 (Asia/Baku). This report distinguishes deterministic local validation from remote service configuration. It is not a declaration of production readiness.
+Verified locally on 6 November 2026 (Baku, macOS, Docker PostgreSQL 18.6). Template-level results from 16 October 2026 are in git history.
 
-| Check                            | Actual result                                                      |
-| -------------------------------- | ------------------------------------------------------------------ |
-| Strict TypeScript                | PASS                                                               |
-| ESLint                           | PASS                                                               |
-| Unit tests                       | 34 passed                                                          |
-| PostgreSQL integration tests     | 6 passed; 1 harness-only case skipped in the standalone suite      |
-| Playwright E2E                   | 5 passed, including the otherwise-skipped paid fixture harness     |
-| Production Next.js build         | PASS inside the final ARM64 Docker build                           |
-| ARM64 Docker image               | PASS, `launchpad:reuse-verification`                               |
-| Explicit image migration runner  | PASS, `Migrations applied` against isolated PostgreSQL             |
-| Container startup                | PASS, runtime user `nextjs`                                        |
-| Docker health check              | PASS, `healthy`                                                    |
-| Application health               | HTTP 200, `{"status":"ok","database":"connected"}`                 |
-| Production Compose validation    | PASS, `docker compose ... config --quiet`                          |
-| Deployment script syntax         | PASS                                                               |
-| Rollback tests                   | PASS, simulated failed startup restores the prior validated digest |
-| Dependency audit                 | No known vulnerabilities found after patched tooling override      |
-| Desktop/mobile visual inspection | PASS; inspected 1440px and 390px screenshots                       |
-| Mobile horizontal overflow       | None at 390px                                                      |
+| Check | Result |
+|---|---|
+| Strict TypeScript (`next typegen && tsc`) | PASS |
+| ESLint | PASS (0 errors; 14 warnings: intentional `<img>`/`<picture>` usage) |
+| Unit tests (Vitest) | 114 passed — routing/i18n, HTML cleanup, colour/size normalization, upload sniffing, RFQ validation, demo masking, role guards (`requireWriter` 403 for `demo_viewer`/`customer`, 401 anonymous) |
+| Integration tests | 12 passed, 2 skipped (template webhook/billing/analytics suites against isolated `_test` DB) |
+| Playwright E2E | 11 passed — az default + language switch keeps page, legacy 301 in one hop + 410, catalogue → product → basket → RFQ, typo-tolerant search, no overflow at 360 px (4 pages), admin auth, **demo bypass attempt rejected server-side with DB unchanged**, admin edit + audit log |
+| Production build | PASS (`next build`, standalone) |
+| Legacy import | 135 products, 165 source translations, 235 AI drafts, 292 media (1752 variants, 28 MB), 203 redirects (301) + 36 Gone (410) |
+| Cold-visit benchmark (local prod build) | see `data/benchmarks/after-local.json` vs `baseline.json` |
+| Lighthouse 12.8.2 mobile (local) | Accessibility 100, Best Practices 100, Performance 79–90 (simulated throttling, varies with machine load), SEO 69 only because the demo is `noindex` |
+| Security headers | CSP, X-Frame-Options DENY, nosniff, Referrer-Policy, Permissions-Policy, COOP; HSTS at Caddy |
 
-## What the tests exercise
-
-Unit tests cover redirect validation, mutation origins, password/email validation, environment failure modes, expired/missing entitlements, subscription policy, immutable deployment references, and rollback on startup failure.
-
-Integration tests use a dedicated PostgreSQL 18.6 database with a name ending in `_test`. They apply real SQL migrations; verify signed and unsigned webhook handling; deduplicate delivery; reconcile stale payloads against mocked authoritative state; deny customer mismatches; check rollback of incomplete event writes; and exercise analytics consent, transactional outbox insertion, stable event identifiers and ingestion retry. The provider network boundary is mocked deterministically; signature verification and database writes are real.
-
-Browser tests cover landing/pricing/registration navigation, protected-dashboard redirection, responsive overflow, theme switching, email registration and local verification, login, profile updates, free-user denial, Pro access through a signed fixture webhook, password change, logout, and email-based password reset. The paid-access harness runs in a separate test process against the isolated database and mocks only provider lookup; no production test endpoint or bypass is installed.
-
-The test database uses a disposable Docker tmpfs volume. Real production data was not accessed. The container health test uses nonfunctional email credentials solely to satisfy production configuration validation; no email was sent.
+## How the "after" numbers were obtained
+`node scripts/bench.mjs` against `next start` on localhost (same profiles as the baseline: mobile Slow 4G + 4× CPU, desktop unthrottled; RUNS=3 median). Local runs have **no network latency**, so TTFB is not comparable to the baseline; FCP/LCP/CLS/requests/bytes are. The production run (Hetzner + Cloudflare, measured from Baku) must replace these before the numbers are used publicly: save it as `data/benchmarks/after-production.json`.
 
 ## NOT VERIFIED
-
-- Real Polar sandbox checkout, portal, renewal, failed-payment and full/partial-refund policies. Configure sandbox credentials/products/benefits and run the checklist in BILLING.md.
-- Real Google OAuth callback and provider account linking.
-- Resend delivery/domain reputation; PostHog ingestion/dashboards; Sentry event delivery, performance data and source-map upload.
-- GitHub-hosted Actions execution, GHCR publication, protected environment approvals, SSH/VPS deployment, public DNS/TLS and central Caddy routing.
-- Live rollback, backup restore, load behavior, production cookie/proxy configuration and jurisdiction-specific legal review.
-
-## Known tradeoffs
-
-Entitlements have a 15-minute lease; revocation can lag without webhook delivery. Expired leases fail closed when provider reconciliation fails. Connected or pending billing customers require reviewed support-assisted deletion. Analytics retries depend on webhook redelivery; there is no background worker. Product-defined onboarding/core actions are typed extension points. Legal pages and example price labels require customization.
-
-ESLint 9.39.5 is deprecated upstream but retained because Next.js's bundled plugin dependency ranges do not yet support ESLint 10. The dependency audit found no known vulnerabilities. Revisit this pin when upstream compatibility improves. The template keeps pnpm 11.21.0 for reproducibility rather than introducing a package-manager major migration.
-
-Earlier checks exposed and corrected sandbox port/font access, missing browser installation, a form label mismatch, dependency build-script approval, and a migration-runner packaging issue. The table reports the final successful runs, not those intermediate failures.
-
-## Template reuse and deployment audit (16 October 2026)
-
-The prior foundation used shared development database defaults, no initializer, a fixed SSH deployment directory, manual-only releases and an assumed GitHub environment approval capability. The revised implementation keeps the same application and provider architecture:
-
-- `pnpm setup` initializes names, brand tokens, domains, ports and an explicit GitHub repository. Tested through the actual pinned pnpm CLI, including `pnpm setup -- --name ...` and `pnpm run setup --name ...`.
-- Two independent temporary template copies received separate local/production credentials, Compose identities, proxy aliases and persistent volume names. Setup reruns preserved existing secrets; partial bundles and unsafe inputs were rejected.
-- A fresh generated local project built and ran both Next.js and PostgreSQL in Docker. Its explicit local migration passed, health returned 200 with the database connected, and a written fixture survived a database restart.
-- Both generated production Compose configurations validated with no published application/database ports and the existing external proxy plus an internal per-product database network.
-- Unit coverage includes failed image pulls, startup/health failure rollback, first-deploy failure, same-digest redeploy history, explicit rollback, and cross-project image rejection. Deploy never executes migrations, database recreation or volume deletion.
-- GitHub workflows passed `actionlint`; deployment shell syntax passed. Production selects an exact successful current-main commit associated with a merged PR, builds ARM64, deploys by digest, and checks freshness again after approval. Native protected mode verifies the actual reviewer rule; unsupported configurations fail closed. Manual mode requires an allowlisted operator and never auto-deploys.
-- The updated ARM64 production image built successfully; its bundled migration command passed on the disposable local database. Runtime UID was 1001, Docker health was healthy and the endpoint returned 200. Neither `.env.local` nor generated runtime secrets existed in the image.
-- Final TypeScript, lint, 34 unit, 6 integration and 5 E2E tests passed. One harness-only integration case is skipped in standalone integration runs and exercised by the E2E paid-access flow. Formatting and diff whitespace checks passed.
-
-The repository has no configured Git remote. The actual account plan, repository visibility/protection settings, GitHub API token permissions, workflow dispatch/reviewer execution, GHCR publishing and SSH/VPS deployment remain **NOT VERIFIED**. Plan constraints were checked against current official GitHub documentation; no protection capability was assumed or enabled remotely. No live server, central Caddy, production database or existing user volume was modified. Temporary verification containers were stopped without deleting their database volumes.
+- Production deployment: Hetzner VPS, central Caddy route, Cloudflare proxy/cache rules, Baku PoP (`cf-ray`), TLS, public `/api/health`.
+- GitHub Actions runs (Quality, Production), GHCR publishing, ARM64 image build with these changes.
+- Resend delivery of RFQ notifications (`NOTIFY_EMAIL`), PostHog Web Vitals, Sentry.
+- Polar sandbox checkout for digital patterns (no sandbox keys configured).
+- Claude API translation button (no `ANTHROPIC_API_KEY` configured).
+- Company review of AI translations; certification/standard data (absent in source).
+- What Googlebot receives from the old site (the 409 interstitial may whitelist it).
+- Screen-reader walkthrough (automated Lighthouse/axe-core checks only).

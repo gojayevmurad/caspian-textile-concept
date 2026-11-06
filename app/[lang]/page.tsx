@@ -11,6 +11,7 @@ import {
 import { getDictionary } from "@/src/lib/i18n";
 import { getCatalog, getCategories } from "@/src/lib/catalog/queries";
 import { ProductCard, cardLabels } from "@/src/components/site/product-card";
+import { byRecommended } from "@/src/lib/catalog/rank";
 import { IndustryIcon } from "@/src/components/site/industry-icon";
 import { Picture } from "@/src/components/site/picture";
 import { buildMetadata, JsonLd, siteUrl } from "@/src/lib/seo/metadata";
@@ -47,26 +48,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
     (c) => c.kind === "industry" && c.count > 0,
   );
   // One strong product per type for a varied "featured" grid; apparel first.
-  const typeOrder = [
-    "type:workwear-sets",
-    "type:jackets",
-    "type:vests",
-    "type:bib-overalls",
-    "type:coveralls",
-    "type:shirts",
-    "type:medical-wear",
-    "type:footwear",
-    "type:gloves",
-    "type:head-protection",
-  ];
-  const rank = (p: (typeof catalog)[number]) => {
-    const i = typeOrder.findIndex((k) => p.categories.includes(k));
-    return i === -1 ? 99 : i;
-  };
   const seen = new Set<string>();
   const featured = [...catalog]
     .filter((p) => p.image)
-    .sort((a, b) => rank(a) - rank(b) || a.position - b.position)
+    .sort(byRecommended)
     .filter((p) => {
       const type = p.categories.find((c) => c.startsWith("type:")) ?? p.sku;
       if (seen.has(type)) return false;

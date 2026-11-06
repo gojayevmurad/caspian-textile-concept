@@ -4,6 +4,7 @@ import { SlidersHorizontal, X } from "lucide-react";
 import type { CategoryView, ProductSummary } from "@/src/lib/catalog/queries";
 import type { Locale } from "@/src/lib/i18n/config";
 import { colorNames } from "@/src/lib/catalog/taxonomy";
+import { byRecommended } from "@/src/lib/catalog/rank";
 import { ProductCard, type CardLabels } from "./product-card";
 
 type Labels = {
@@ -75,6 +76,7 @@ export function CatalogBrowser({
 
   const filtered = useMemo(() => {
     const list = products.filter((p) => matches(p));
+    if (sort === "featured") list.sort(byRecommended);
     if (sort === "name")
       list.sort((a, b) => a.name.localeCompare(b.name, locale));
     else if (sort === "new")

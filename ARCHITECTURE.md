@@ -29,3 +29,11 @@ Official references: [Next auth](https://nextjs.org/docs/app/guides/authenticati
 The app keeps the root `app/` convention from the existing starter and places reusable modules under `src/`. Billing benefits cover recurring and one-time access through a common entitlement. Deleting an account with any connected billing customer requires support review, preventing orphaned paid subscriptions. Entitlement leases expire after 15 minutes and refresh server-side; access fails closed if refresh fails. This can delay revocation by at most a lease interval. No zero-downtime claim is made.
 
 ESLint is pinned to 9.39.5 because the official Next.js lint plugin dependencies do not yet declare ESLint 10 compatibility. npm marks ESLint 9 deprecated; dependency audit is clean, but revisit this pin when the upstream plugin compatibility ranges are updated.
+
+## Caspian Textile concept
+
+- **Routing:** `app/[lang]` (public site root layout) + `app/(admin)/admin` (admin root layout) + `app/(platform)` (auth/settings). `proxy.ts` maps localized public paths to internal routes and resolves legacy URLs from the `redirect` table (in-memory, 60 s TTL).
+- **Rendering:** public pages are ISR rendered on first request (`generateStaticParams` returns `[]`, so builds need no database) and served with `s-maxage` for Cloudflare. Admin writes call `updateTag("catalog")` and purge Cloudflare.
+- **Data:** `product` + `product_translation` (per locale: name, slug, texts, SEO, translation status, folded search text with a `pg_trgm` GIN index), `category` (+translations; kinds industry/type/feature), `media` (content-hashed variants), `rfq` + `rfq_item` (size × colour matrix), `redirect`, `audit_log`, `content_block`.
+- **Media:** processed once with sharp into AVIF/WebP variants on a persistent volume (`MEDIA_DIR`), served immutable by `/media/*`.
+- **APIs:** `/api/rfq`, `/api/search`, `/api/spec/{lang}/{sku}` (PDF), `/api/v1/*` (public read-only REST + OpenAPI 3.1), `/api/patterns/checkout` (Polar).

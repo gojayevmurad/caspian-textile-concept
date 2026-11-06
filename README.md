@@ -1,82 +1,74 @@
-# Launchpad
+# Caspian Textile — concept rebuild
 
-A reusable, single-product Next.js SaaS foundation. Public pages work without credentials. Accounts require PostgreSQL; billing stays disabled until configured. No simulated payment is treated as successful.
+> **Konsept demo.** Bu, Caspian Textile MMC-nin rəsmi saytı deyil. Layihə Full-stack Developer vakansiyasına müraciət üçün hazırlanıb. Bütün brend materialları Caspian Textile MMC-yə məxsusdur, tələb olunarsa demo dərhal silinəcək.
 
-## Quick start
+caspiantextile.com saytının sıfırdan yenidən qurulmasıdır. Eyni məhsullar, şəkillər və mətnlərdən istifadə olunub. Layihəyə daxildir:
 
-Use Node 24 LTS and pnpm 11.21.0. Create a repository from this GitHub template, then:
+- sürətli, çoxdilli (az/en/ru) və quraşdırıla bilən (PWA) public sayt;
+- öz admin paneli (CMS) və B2B sorğu axını;
+- texniki SEO/GEO;
+- ölçülə bilən "əvvəl → sonra" müqayisəsi (`/case-study`).
 
-```sh
-corepack enable
-pnpm install --frozen-lockfile
-pnpm setup
-pnpm local:up
-pnpm local:migrate
-```
+**English summary.** A from-scratch rebuild of caspiantextile.com on a Next.js 16 template:
 
-`setup` generates branding, a unique Compose identity, slug-derived default port ranges and independent local/production credentials. The pinned pnpm 11 supports `pnpm setup`; for arguments use `pnpm setup -- --name ...` or `pnpm run setup --name ...`. See [START_NEW_SAAS.md](START_NEW_SAAS.md) for the concise Azerbaijani guide, first provisioning and daily deployment.
+- localized public site (az default, en, ru), ISR + edge caching, PWA;
+- custom admin panel with a read-only demo role;
+- B2B quote/RFQ flow with logo preview, PDF spec sheets;
+- public REST API with OpenAPI;
+- technical SEO/GEO (hreflang sitemap, JSON-LD, `llms.txt`, 301 map from the old WordPress URLs).
 
-Both Next.js and PostgreSQL run in Docker by default. Open the URL printed by setup. Register, run `pnpm email:inbox`, open the verification URL, and sign in. The local inbox contains sensitive short-lived links; it has no public HTTP endpoint. Preview mode never sends real mail. `pnpm local:stop` retains database volumes. For host-side Next.js, stop the Docker app first and use `pnpm dev` with the same generated configuration.
+## Nəticələr (lokal production build, real Chrome, eyni skript)
 
-## Commands
+| | Köhnə sayt | Yeni sayt |
+|---|---|---|
+| Ana səhifə, mobil Slow 4G: FCP / LCP | 7.0 s / 31.1 s | 0.76 s / 0.76 s |
+| Məhsul səhifəsi CLS (desktop) | 1.03 | 0 |
+| Ana səhifənin transfer həcmi (mobil) | 6.3 MB, 123 sorğu | 436 KB, 24 sorğu |
+| Render-blocking resurs | 17–18 | 1 |
+| Lighthouse (mobil, lokal) | ölçülə bilmir (HTTP 409) | Accessibility 100, Best Practices 100, Performance 79–90 |
 
-| Command                 | Purpose                                                 |
-| ----------------------- | ------------------------------------------------------- |
-| `pnpm setup`            | Initialize branding, domains and isolated configuration |
-| `pnpm local:up`         | Start Next.js and PostgreSQL in Docker                  |
-| `pnpm local:migrate`    | Explicit local migration inside Docker                  |
-| `pnpm local:stop`       | Stop local containers, keep volumes                     |
-| `pnpm dev`              | Local application                                       |
-| `pnpm typecheck`        | Strict TypeScript                                       |
-| `pnpm lint`             | ESLint                                                  |
-| `pnpm test`             | Unit tests                                              |
-| `pnpm test:integration` | Webhook and optional isolated database tests            |
-| `pnpm test:e2e`         | Browser tests                                           |
-| `pnpm build`            | Production standalone build                             |
-| `pnpm db:generate`      | Generate SQL for review                                 |
-| `pnpm db:migrate`       | Explicit migration execution                            |
-| `pnpm email:inbox`      | Development verification/reset URLs                     |
-| `pnpm format`           | Format source                                           |
+Xam data: `data/benchmarks/*.json`. Skript: `scripts/bench.mjs`. Production ölçmələri deploy-dan sonra `after-production.json` faylına yazılacaq və case study səhifəsi onları avtomatik istifadə edəcək.
 
-Stop an existing server on port 3000 before browser tests; Playwright starts its own isolated application. For complete database tests:
-
-```sh
-pnpm local:test-db
-pnpm test:integration
-pnpm exec playwright install chromium
-pnpm test:e2e
-```
-
-Integration tests load the local test URL and apply version-controlled migrations to the `_test` database only. The E2E wrapper explicitly points the application to that same isolated test database. Never configure test URLs against production. The test database is disposable (tmpfs). Without a configured test database, database-dependent integration cases are explicitly skipped. CI supplies its own ephemeral test database without setup secrets.
-
-## What is included
-
-- Email/password authentication, verification, password resets, optional Google login, sessions, profile/security settings, and guarded deletion.
-- Polar sandbox checkout, customer portal/cancellation, signed webhooks, transactional event deduplication, and authoritative entitlement reconciliation.
-- Consent-gated PostHog helpers, Pino JSON logs, Sentry client/server capture.
-- Responsive landing, pricing, auth, dashboard, billing, settings, and a server-protected premium sample.
-- Drizzle SQL migrations, Docker standalone image, private PostgreSQL networking, GHCR workflows, health verification and rollback script.
-
-## Repository map
+## Struktur
 
 ```text
-app/                 App Router pages and HTTP endpoints
-src/components/      Shared interface and shadcn-style owned primitives
-src/config/          Branding and validated runtime configuration
-src/lib/auth/        Better Auth and server session helpers
-src/lib/billing/     Provider boundary, transactions and entitlement policy
-src/lib/db/          PostgreSQL connection and explicit Drizzle schema
-src/lib/email/       Resend and React Email
-src/lib/analytics/   Typed, consent-aware tracking helpers
-src/lib/security/    Validation and origin checks
-drizzle/             Reviewed SQL migrations and snapshots
-tests/               Unit, integration and Playwright tests
-deploy/              Production Compose and rollout script
-.github/workflows/   PR quality and approved production deployment
+app/[lang]/        Public sayt (root layout: html lang, header, footer, demo banner)
+app/(admin)/admin  Admin panel (öz root layout-u; hər səhifə requireRole çağırır)
+app/(platform)/    Template-dən qalan auth/settings səhifələri
+app/api/           RFQ, axtarış, PDF, REST v1, Polar, auth, webhooks
+proxy.ts           Dil rewrite-ı, köhnə URL redirect-ləri (301/410), noindex başlığı
+src/lib/catalog    Sorğular (unstable_cache + "catalog" tag), taksonomiya, HTML təmizləmə
+src/lib/media      sharp pipeline (AVIF/WebP, blur, EXIF təmizləmə), OG kartları
+src/lib/admin      Rol konteksti, mutate() (403 + audit + cache + CDN purge), server actions
+scripts/           import-legacy, admin-user, bench, catalog-dump, brand-assets
+data/              translations.draft.json (AI qaralamalar), benchmarks
 ```
 
-See [START_NEW_SAAS.md](START_NEW_SAAS.md), [ARCHITECTURE.md](ARCHITECTURE.md), [BILLING.md](BILLING.md), [ANALYTICS.md](ANALYTICS.md), [SECURITY.md](SECURITY.md), [DEPLOYMENT.md](DEPLOYMENT.md), [INIT_PROMPT.md](INIT_PROMPT.md), and [VERIFICATION.md](VERIFICATION.md).
+## Lokal işə salma
 
-## Before launch
+```sh
+corepack enable && pnpm install --frozen-lockfile
+pnpm setup -- --name "Caspian Textile" --slug caspian-textile --domain caspian.muradgojayev.com --repository gojayevmurad/caspian-textile-concept --color '#2b2d4f'
+docker compose --env-file .env.local up -d --wait db
+pnpm db:migrate
+LEGACY_DATA_DIR=caspian-research/data pnpm import:legacy     # məhsullar, şəkillər, redirect-lər
+pnpm admin:user --email you@example.com --name "You"         # admin (parol bir dəfə göstərilir)
+pnpm admin:create-demo --email demo@example.com              # read-only demo hesab
+pnpm dev
+```
 
-Set product branding and support contact, replace legal placeholders and illustrative prices, configure verified email delivery, connect sandbox billing and test its complete lifecycle, configure consent and monitoring, run CI, back up PostgreSQL and rehearse restore/rollback. The repository is a foundation, not a certification of production readiness.
+`caspian-research/data` köhnə saytdan Apify ilə toplanmış datadır (~200 MB, şirkətə məxsus şəkillər). Repo-ya commit edilmir.
+
+## Yoxlamalar
+
+```sh
+pnpm typecheck && pnpm lint && pnpm test
+pnpm local:test-db && pnpm test:integration && pnpm test:e2e
+node scripts/bench.mjs out.json <url> [url...]
+```
+
+E2E testləri demo hesabın UI bloklarını keçib server action göndərdiyi halı da yoxlayır: server dəyişikliyi rədd edir və DB dəyişmir.
+
+## Deploy
+
+Template-in pipeline-ı istifadə olunur: GHCR immutable digest, `deploy/deploy.sh`, mərkəzi Caddy (`deploy/Caddyfile.example`). Cloudflare proxy və Full (strict) TLS ilə işləyir. Media `MEDIA_PATH` bind mount-unda saxlanılır (uid 1001). Kataloq `scripts/catalog-dump.sh` ilə ötürülür. Ətraflı məlumat: [START_NEW_SAAS.md](START_NEW_SAAS.md), [DEPLOYMENT.md](DEPLOYMENT.md). Qərarlar: [DECISIONS.md](DECISIONS.md).
