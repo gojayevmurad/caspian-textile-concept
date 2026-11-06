@@ -35,4 +35,14 @@ fi
 if [[ -n "$previous" && "$previous" != "$image" ]]; then printf '%s\n' "$previous" > .previous-image.tmp; mv .previous-image.tmp .previous-image; fi
 printf '%s\n' "$image" > .validated-image.tmp
 mv .validated-image.tmp .validated-image
+# Edge-cached HTML from the previous build would make every client navigation fall back to a
+# full page load (build ID mismatch), so drop this hostname from the CDN cache right away.
+"${compose[@]}" exec -T app node -e '
+const { CLOUDFLARE_ZONE_ID: zone, CLOUDFLARE_API_TOKEN: token, APP_URL } = process.env;
+if (!zone || !token) { console.log("CDN purge skipped (no Cloudflare token)"); process.exit(0); }
+fetch(`https://api.cloudflare.com/client/v4/zones/${zone}/purge_cache`, { method: "POST",
+  headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+  body: JSON.stringify({ hosts: [new URL(APP_URL).hostname] }) })
+  .then((r) => console.log(r.ok ? "CDN purged" : `CDN purge failed: ${r.status}`))
+  .catch(() => console.log("CDN purge failed"));' || true
 echo "Deployment verified: $image"

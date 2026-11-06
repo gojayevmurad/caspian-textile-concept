@@ -261,13 +261,13 @@ const plan: Record<Lang, string[]> = {
 const notVerified: Record<Lang, string[]> = {
   az: [
     "Googlebot-un köhnə saytda nə gördüyü (409 yoxlaması Googlebot üçün istisna edilə bilər)",
-    "Polar sandbox checkout (açarlar konfiqurasiya olunmayıb)",
+    "Polar sandbox: checkout sessiyası və yönləndirmə işləyir; test kartı ilə tam ödəniş və faylın çatdırılması avtomatik yoxlanılmayıb",
     "AI tərcümələrinin şirkət tərəfindən təsdiqi",
     "Sertifikat/standart məlumatları (mənbədə yoxdur — boş saxlanılıb)",
   ],
   en: [
     "What Googlebot sees on the old site (the 409 check may exempt Googlebot)",
-    "Polar sandbox checkout (keys not configured)",
+    "Polar sandbox: checkout session and redirect work; a full test-card payment and file delivery were not verified automatically",
     "Company review of the AI translations",
     "Certification/standard data (absent from the source — left empty)",
   ],
