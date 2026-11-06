@@ -63,3 +63,4 @@ test-results/
 /.dev-credentials
 
 /APPLICATION_MESSAGE.md
+/.prod-credentials
